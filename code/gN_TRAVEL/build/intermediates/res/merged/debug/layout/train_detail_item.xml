@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="@dimen/frg_route_margintop" >
+
+    <TextView
+        android:id="@+id/tv_train_detail_seat_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/general_margin_left" />
+
+    <TextView
+        android:id="@+id/img_train_detail_dollor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/bottom_container_img_margin_top"
+        android:layout_toLeftOf="@+id/tv_train_detail_price"
+        android:text="@string/dollor"
+         />
+
+    <TextView
+        android:id="@+id/tv_train_detail_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/general_margin_left"
+        android:gravity="left|center_vertical" />
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/train_detail_item.xml -->

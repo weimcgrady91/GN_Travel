@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_marginRight="@dimen/general_margin"
+            android:background="@drawable/bg_table_4"
+            android:orientation="vertical" >
+
+              <include layout="@layout/dialog_title" />
+
+            <TextView
+                android:id="@+id/tv_dialog_title"
+                style="@style/description_v7"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/general_dialog_heigh"
+                android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                android:layout_marginRight="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:text="@string/suredel" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/date_pick_container_heigh"
+                android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                android:layout_marginRight="@dimen/second_line_title_marginLeft"
+                android:layout_marginBottom="@dimen/second_line_marginTop2"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_dialog_cancel"
+                    style="@style/description_v7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/second_line_title_marginLeft"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_btn_selector"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/btn_dialog_sure"
+                    style="@style/description_v22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_btn_selector"
+                    android:text="@string/delect" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

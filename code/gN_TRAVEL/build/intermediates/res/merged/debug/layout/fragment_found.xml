@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingLeft="@dimen/general_spacing"
+    android:paddingRight="@dimen/general_spacing" >
+
+    <RelativeLayout
+        android:id="@+id/ll_news"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_marginTop="@dimen/general_spacing"
+        android:background="@drawable/table_list_selector" >
+
+        <ImageView
+            android:id="@+id/img_news"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:background="@drawable/found_news" />
+
+        <TextView
+            style="@style/list_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:layout_toRightOf="@id/img_news"
+            android:text="@string/widget_news" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_spacing"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_stock"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_below="@id/ll_news"
+        android:layout_marginTop="@dimen/general_spacing"
+        android:background="@drawable/table_list_selector" >
+
+        <ImageView
+            android:id="@+id/img_stock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:background="@drawable/found_stock" />
+
+        <TextView
+            style="@style/list_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:layout_toRightOf="@id/img_stock"
+            android:text="@string/economics" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_spacing"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_weather"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_below="@id/ll_stock"
+        android:layout_marginTop="@dimen/general_spacing"
+        android:background="@drawable/table_list_selector" >
+
+        <ImageView
+            android:id="@+id/img_weather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:background="@drawable/found_weather" />
+
+        <TextView
+            style="@style/list_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:layout_toRightOf="@id/img_weather"
+            android:text="@string/widget_weather" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_spacing"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_found_train"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_below="@id/ll_weather"
+        android:layout_marginTop="@dimen/general_spacing"
+        android:background="@drawable/table_list_selector" >
+
+        <ImageView
+            android:id="@+id/img_train"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:background="@drawable/found_train" />
+
+        <TextView
+            style="@style/list_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:layout_toRightOf="@id/img_train"
+            android:text="@string/train_lookup" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_spacing"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_found_lifeService"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_below="@id/re_found_train"
+        android:layout_marginTop="@dimen/general_spacing"
+        android:background="@drawable/table_list_selector" >
+
+        <ImageView
+            android:id="@+id/img_lifeservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:background="@drawable/found_lifeservice" />
+
+        <TextView
+            style="@style/list_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/general_spacing"
+            android:layout_toRightOf="@id/img_lifeservice"
+            android:text="@string/life_service" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_spacing"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/fragment_found.xml -->

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_group_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/slt_common_card_base_putaway"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/ll_group"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/listview_selector2"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_calendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp" >
+
+            <ImageView
+                android:id="@+id/img_calendar_frame"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:src="@drawable/slt_newtrip_date_1_calendar" />
+
+            <TextView
+                android:id="@id/tv_date"
+                style="@style/date_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:paddingTop="6dp"
+                android:text="25" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_tripName"
+            style="@style/spec_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4.5dp"
+            android:layout_toRightOf="@id/rl_calendar"
+            android:text="北京-上海" />
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/slt_newtrip_arrow_down_default" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/img_driv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/slt_newtrip_division_point"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_child"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/child_listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:cacheColorHint="#00000000"
+            android:divider="@color/common_bg"
+            android:dividerHeight="1dp"
+            android:listSelector="@drawable/listview_selector" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout>

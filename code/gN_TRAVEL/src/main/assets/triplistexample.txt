@@ -1,0 +1,1 @@
+{"content":[{"tripId":-1,"name":"1990-01-01T这是一段新的旅程(示例)","status":true,"createDate":"Sep 11, 2014 4:22:18 PM","tripOrderSimpleBeans":[{"date":"2014-11-12T08:30:00","type":"flight","name":"国航CA1496"},{"date":"2014-11-12T12:30:00","type":"hotel","name":"丽江无双别院"}]}],"errorCode":0,"errorMsg":null}

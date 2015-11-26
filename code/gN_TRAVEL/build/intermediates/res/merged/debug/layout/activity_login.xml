@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin2"
+        android:background="@drawable/bg_table_4"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_row_heigh"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v12"
+                android:layout_width="@dimen/weather_marginLeft"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/zhanghao" />
+
+            <ImageView
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                android:layout_marginTop="@dimen/line_top_bottom_distance"
+                android:background="@drawable/dividing_line_vertical" />
+
+            <EditText
+                android:id="@+id/et_id"
+                style="@style/spec_v4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/calendar_month_title_bottommargin"
+                android:background="@android:color/transparent"
+                android:hint="@string/please_id"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            android:background="@drawable/dividing_line_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_row_heigh"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_login_pw"
+                style="@style/description_v12"
+                android:layout_width="@dimen/weather_marginLeft"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/password" />
+
+            <ImageView
+                android:id="@+id/img_login_line"
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                android:layout_marginTop="@dimen/line_top_bottom_distance"
+                android:layout_toRightOf="@id/tv_login_pw"
+                android:background="@drawable/dividing_line_vertical" />
+
+            <EditText
+                android:id="@+id/et_password"
+                style="@style/spec_v4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/calendar_month_title_bottommargin"
+                android:layout_toRightOf="@id/img_login_line"
+                android:background="@android:color/transparent"
+                android:hint="@string/pleasepasswrd"
+                android:maxLength="16"
+                android:password="true"
+               />
+
+            <Button
+                android:id="@+id/btn_login_forget_pw"
+                style="@style/button_v3"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/general_btn_heigh"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/calendar_day_headers_paddingbottom"
+                android:background="@android:color/transparent"
+                android:text="@string/forget_pw" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/button_v4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/second_line_marginTop"
+        android:background="@drawable/red_btn_selector"
+        android:text="@string/login" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/frg_list_search_left_table_w" >
+
+        <Button
+            android:id="@+id/btn_guest_login"
+            style="@style/button_v4"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_row_heigh"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/white_btn_selector"
+            android:text="@string/no_huiyuan_login"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_login_reg"
+            style="@style/button_v5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_row_heigh"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/btn_guest_login"
+            android:layout_marginTop="@dimen/second_line_marginTop"
+            android:background="@drawable/white_btn_selector"
+            android:text="@string/regcode" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_login.xml -->

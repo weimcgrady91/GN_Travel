@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/shurukuang"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/searchhotel" />
+
+            <EditText
+                android:id="@+id/activity_weather_addcity_et_searchkey"
+                style="@style/description_v13"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/weather_search_city" />
+
+            <ImageView
+                android:id="@+id/activity_weather_img_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="5dp"
+                android:src="@drawable/delete"
+                android:visibility="invisible" >
+            </ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/activity_weather_addcity_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/description_v13"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:background="@color/city_list_title"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/hotcity" />
+
+                <GridView
+                    android:id="@+id/activity_weather_addcity_gv_hotcity"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="4" >
+                </GridView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    style="@style/description_v13"
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:background="@color/city_list_title"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="@string/province" />
+
+                <GridView
+                    android:id="@+id/activity_weather_addcity_gv_province"
+                    android:layout_width="fill_parent"
+                    android:layout_height="300dp"
+                    android:numColumns="4" >
+                </GridView>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <ListView
+        android:id="@+id/activity_weather_addcity_lv_searchcity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/dividing_line_horizontal"
+        android:dividerHeight="@dimen/dividerHeight"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_weather_addcity.xml -->

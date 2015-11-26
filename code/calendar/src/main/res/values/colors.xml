@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<!--     <color name="text_color2">#565656</color> -->
+<!--     框架列表上小标题级列表中二级说明文字，引导文字 -->
+<!--     <color name="not_current_month">#939393</color> -->
+<!--     价格 红色 -->
+<!--     <color name="today_color">#fd7133</color> -->
+<!--     低价格 绿色 -->
+<!--     <color name="text_color6">#14c54a</color> -->
+<!--     提示性信息 -->
+<!--     <color name="selected_color">#0291d3</color> -->
+    <color name="calendar_active_month_bg">#fff5f7f9</color>
+    <color name="calendar_bg">#ffffffff</color>
+    <color name="calendar_divider">#ffbababa</color>
+    <color name="calendar_inactive_month_bg">#ffd7d9db</color>
+    <color name="calendar_selected_day_bg">#ff379bff</color>
+    <color name="calendar_highlighted_day_bg">#ccffcc</color>
+    <color name="calendar_selected_range_bg">#ff96caff</color>
+    <color name="calendar_text_inactive">#40778088</color>
+    <color name="calendar_text_active">#ff778088</color>
+    <color name="calendar_text_selected">#ffffffff</color>
+    <color name="calendar_text_unselectable">#7f778088</color>
+    <color name="city_list_title">#e5e5e5</color>
+
+    
+    <color name="today_text_color">#fd7134</color>
+    <color name="state_selected_text_color">#ffffff</color>
+    <color name="selected_bg_color">#0291d3</color>
+    <color name="normal_text_color">#565656</color>
+    <color name="not_current_month_text_color">#939393</color>
+    <color name="divieline_color">#c6c6c6</color>
+    <color name="common_blue">#0d7aff</color>
+    
+    <color name="date_can_press">#5b5b5b</color>
+    <color name="date_not_press">#cbcbcb</color>
+</resources>

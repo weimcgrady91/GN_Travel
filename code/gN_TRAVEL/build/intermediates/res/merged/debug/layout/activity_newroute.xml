@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/common_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:id="@+id/title"
+            android:background="@color/common_blue" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/title_v1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/return_selector"
+                android:gravity="center_vertical"
+                android:nextFocusRight="@+id/tv_departCity"
+                android:paddingRight="12dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="174dp"
+            android:layout_below="@id/title"
+            android:layout_margin="8dp"
+            android:background="@drawable/slt_common_card_noedge"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/str_departCity"
+                    style="@style/description_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/departcity" />
+
+                <View
+                    android:id="@+id/view_algin_for_aepartCity"
+                    android:layout_width="83dp"
+                    android:layout_height="10dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/slt_common_inputframe_default"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/str_aepartCity"
+                    style="@style/description_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/view_algin_for_aepartCity"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="56dp"
+                    android:layout_marginTop="15dp"
+                    android:text="@string/arrivecity" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/str_departCity"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp" >
+
+                    <com.gionee.gntravel.customview.CustomTextView
+                        android:id="@+id/tv_departCity"
+                        style="@style/description_v2"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:background="@drawable/tv_selector"
+                        android:gravity="left|bottom"
+                        android:nextFocusLeft="@+id/tv_title"
+                        android:singleLine="true" />
+
+                    <com.gionee.gntravel.customview.CustomTextView
+                        android:id="@+id/tv_arriveCity"
+                        style="@style/description_v2"
+                        android:layout_width="83dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/tv_selector"
+                        android:gravity="left|bottom"
+                        android:nextFocusRight="@+id/rl_date"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:id="@+id/iv_swap"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="center"
+                        android:src="@drawable/swap_selector2" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1" >
+
+                <TextView
+                    style="@style/description_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/takeOffTime" />
+
+                <LinearLayout
+                    android:id="@+id/rl_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="22dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/tv_selector"
+                    android:gravity="left|center_vertical"
+                    android:nextFocusLeft="@+id/tv_arriveCity"
+                    android:nextFocusRight="@+id/btn_startRoute"
+                    android:nextFocusUp="@+id/tv_departCity" >
+
+                    <TextView
+                        android:id="@+id/tv_takeOffTime"
+                        style="@style/description_v2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12月25日" />
+
+                    <TextView
+                        android:id="@+id/tv_week_day"
+                        style="@style/description_v2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="4dp"
+                        android:text="(星期六)" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/swap_selector" >
+        </ImageView>
+
+        <Button
+            android:id="@+id/btn_startRoute"
+            style="@style/title_v1"
+            android:layout_width="190dp"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/btn_newtrip_selector"
+            android:nextFocusLeft="@+id/rl_date"
+            android:nextFocusRight="@id/tv_title"
+            android:text="@string/goRoute" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calendar_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/occlusion"
+        android:visibility="invisible" >
+
+        <com.weiqun.customcalendar.CustomCalendar
+            android:id="@+id/calendar_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@android:color/transparent"
+            android:padding="0dp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</FrameLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_newroute.xml -->

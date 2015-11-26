@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/calendar_bg" >
+
+    <TextView
+        style="@style/spec_v4"
+        android:id="@+id/item_hotelkeysearch_tv_name"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp" 
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:text="清空历史"/>
+
+</LinearLayout>

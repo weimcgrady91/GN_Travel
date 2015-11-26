@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/login_title"
+        layout="@layout/titlebar" />
+
+    <EditText
+        android:id="@+id/et_nick_name"
+        android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+        android:minHeight="@dimen/actionbar_height"
+        android:layout_marginLeft="@dimen/normal_marginLeftorRight"
+        android:layout_marginRight="@dimen/normal_marginLeftorRight"
+        android:layout_marginTop="@dimen/frg_route_margintop2"
+        android:background="@drawable/bg_table"
+        style="@style/description_v7"
+        android:paddingLeft="@dimen/normal_marginLeftorRight" />
+    
+    
+     <TextView
+            android:id="@+id/tv_forget_pw_guize"
+            style="@style/description_v14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_marginTop="@dimen/general_margin"
+            android:text="@string/nick_name_limit" />
+
+    <Button
+        android:id="@+id/btn_edit_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:layout_marginLeft="@dimen/normal_marginLeftorRight"
+        android:layout_marginRight="@dimen/normal_marginLeftorRight"
+         android:background="@drawable/red_btn_selector"
+        android:layout_marginTop="@dimen/frg_route_margintop2" 
+        android:text="@string/ok"
+        style="@style/button_v4"
+        />
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_edit_nick_name.xml -->

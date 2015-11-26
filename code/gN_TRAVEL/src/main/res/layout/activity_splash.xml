@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/splash"
+    android:orientation="vertical" >
+
+    <LinearLayout
+       android:id="@+id/ll_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+   
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/re_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:background="@drawable/bg_table_4"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/general_row_heigh" >
+
+                        <TextView
+                            android:id="@+id/tv_dialog_title_name"
+                            style="@style/spec_v1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/second_line_title_marginLeft"
+                            android:text="系统提示" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/bottom_fengeline_w"
+                        android:background="@color/common_blue" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_dialog_title"
+                    style="@style/description_v7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                    android:layout_marginRight="@dimen/general_margin"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal" >
+
+                    <CheckBox
+                        android:id="@+id/check_box"
+                        style="@style/mycheckbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/second_line_title_marginLeft" />
+
+                    <TextView
+                        android:id="@+id/tv_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:text="不再提示"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#b3b3b3"
+                        android:textSize="21px" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/date_pick_container_heigh"
+                    android:layout_marginBottom="@dimen/second_line_marginTop2"
+                    android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                    android:layout_marginRight="@dimen/second_line_title_marginLeft"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_dialog_cancel"
+                        style="@style/description_v7"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginRight="@dimen/second_line_title_marginLeft"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_selector"
+                        android:text="退出" />
+
+                    <Button
+                        android:id="@+id/btn_dialog_sure"
+                        style="@style/description_v22"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/white_btn_selector"
+                        android:text="继续" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

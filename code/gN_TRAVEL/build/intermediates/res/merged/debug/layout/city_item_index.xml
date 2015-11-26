@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/city_item_index_height"
+    android:background="@color/city_list_title"
+    android:orientation="vertical"
+	android:minHeight="@dimen/city_item_index_height"
+	android:gravity="center_vertical"
+	>
+
+    <TextView
+        style="@style/description_v21"
+        android:id="@+id/indexTv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/frg_list_search_btn_margin_right"
+        android:gravity="center_vertical"/>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/city_item_index.xml -->

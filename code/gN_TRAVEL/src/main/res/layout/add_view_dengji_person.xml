@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/flight_item_h"
+    android:orientation="vertical" >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:background="@drawable/frg_route_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/flight_item_h" >
+
+
+        <ImageView
+            android:id="@+id/btn_add_view_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="@dimen/date_text_marginleft"
+         
+            android:layout_marginTop="@dimen/date_text_marginleft"
+            android:background="@drawable/blue_cha"
+            android:text="@string/delect" />
+
+        <RelativeLayout
+            android:id="@+id/re_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/flight_item_h"
+            android:layout_toRightOf="@id/btn_add_view_del" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/flight_item_h"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/date_text_marginleft"
+                   android:layout_marginBottom="@dimen/date_text_marginleft"
+                android:gravity="center_vertical"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_dontai_add_name"
+                    style="@style/description_v22"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_dontai_add_code"
+                    style="@style/description_v22"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                     />
+                
+                <TextView
+                    android:id="@+id/tv_dontai_add_id"
+                    style="@style/description_v22"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:visibility="gone"
+                    />
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/img_edit_dengji_person"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="@dimen/normal_marginLeftorRight2"
+                android:background="@drawable/arrow" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

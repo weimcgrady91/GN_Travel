@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:layout_gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/tv_train_station"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_height"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_train_arrival_time"
+       android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_height"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_train_departure_time"
+         android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_height"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_train_stay_time"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_height"
+        android:gravity="center" />
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/train_station_item.xml -->

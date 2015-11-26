@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_blue" >
+
+        <ImageView
+            android:id="@+id/activity_hotel_search_iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="17dp"
+            android:scaleType="center"
+            android:paddingRight="13dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:src="@drawable/back_arrow" />
+
+        <LinearLayout
+            android:id="@+id/ddd"
+            android:layout_width="203dp"
+            android:layout_height="29dp"
+             android:layout_toRightOf="@id/activity_hotel_search_iv_back"
+            android:background="@drawable/shurukuang" 
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/activity_hotel_search_et_content"
+                style="@style/description_v7"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:background="@null"
+                android:hint="@string/hotel_search_input"
+                android:singleLine="true" />
+            <ProgressBar
+                android:id="@+id/pb_search"
+                style="?android:attr/progressBarStyleSmallInverse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+             <ImageView
+                android:id="@+id/activity_hotel_search_clearcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/delete"
+                android:paddingLeft="2dp"
+                android:paddingRight="10dp"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_hotel_bt_search"
+            style="@style/description_v7"
+            android:layout_width="65dp"
+            android:layout_height="29dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/ddd"
+            android:background="@drawable/shurukuang"
+            android:text="@string/hotel_search_bt" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/activity_hotel_search_lv_names"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/dividing_line_horizontal"
+        android:dividerHeight="@dimen/dividerHeight" >
+    </ListView>
+
+    <ListView
+        android:id="@+id/activity_hotel_search_lv_history"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:visibility="gone" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_hotel_search.xml -->

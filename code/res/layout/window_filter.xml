@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/occlusion"
+    android:gravity="bottom"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/window_filter_animPart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/search_bg"
+        android:gravity="bottom"
+        android:clickable="true"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_h"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/window_filter_bt_cancle"
+                style="@style/button_v1"
+                android:layout_width="@dimen/general_btn_width"
+                android:layout_height="@dimen/general_btn_heigh"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/frg_list_search_btn_margin_right"
+                android:background="@drawable/white_btn_selector"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/window_filter_bt_clear"
+                style="@style/button_v1"
+                android:layout_width="@dimen/general_search_btn_cancel_width"
+                android:layout_height="@dimen/general_btn_heigh"
+                android:layout_centerInParent="true"
+                android:background="@drawable/white_btn_selector"
+                android:text="@string/cancel_search" />
+
+            <Button
+                android:id="@+id/window_filter_bt_sure"
+                style="@style/button_v1"
+                android:layout_width="@dimen/general_btn_width"
+                android:layout_height="@dimen/general_btn_heigh"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/frg_list_search_btn_margin_right"
+                android:background="@drawable/white_btn_selector"
+                android:text="@string/ok" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/window_filter_ll_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="41dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="@dimen/frg_list_search_left_table_w"
+                android:layout_height="fill_parent"
+                android:clickable="true"
+                android:background="@drawable/_search_left_table"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/address_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionbar_height"
+                    android:background="@drawable/search_left_table" >
+
+                    <TextView
+                        android:id="@+id/address_line"
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color_v3"/>
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="23dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="酒店位置" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/brand_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionbar_height" >
+
+                    <TextView
+                        android:id="@+id/brand_line"
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color_v3"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="酒店品牌" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/star_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/actionbar_height">
+
+                    <TextView
+                        android:id="@+id/star_line"
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color_v3"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="酒店星级" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/distance_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/actionbar_height" 
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/distance_line"
+                        android:layout_width="3dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_color_v3"
+                        android:visibility="gone" />
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="酒店距离" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/window_fl"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:background="@drawable/search_left_table" >
+
+                <ListView
+                    android:id="@+id/window_filter_address_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:divider="@null"
+                    android:visibility="visible" >
+                </ListView>
+                <ListView
+                    android:id="@+id/window_filter_zone_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:divider="@null"
+                    android:visibility="gone" >
+                </ListView>
+                <ListView
+                    android:id="@+id/window_filter_area_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:divider="@null"
+                    android:visibility="gone" >
+                </ListView>
+                <ListView
+                    android:id="@+id/window_filter_brand_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:divider="@null"
+                    android:visibility="gone" >
+                </ListView>
+                <ListView
+                    android:id="@+id/window_filter_star_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:divider="@null"
+                    android:visibility="gone" >
+                </ListView>
+                <ListView
+                    android:id="@+id/window_filter_distance_lv"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:divider="@null"
+                    android:visibility="gone" >
+                </ListView>
+
+                <ImageView
+                    android:id="@+id/window_filter_pb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@anim/part_progress_round"
+                    android:visibility="gone" />
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

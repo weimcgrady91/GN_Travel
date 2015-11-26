@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frg_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/titlebar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <com.amap.api.maps2d.MapView
+                android:id="@+id/amapsView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+
+            <LinearLayout
+                android:id="@+id/activity_map_detail_ll_top"
+                android:layout_width="fill_parent"
+                android:layout_height="41dp"
+                android:background="@drawable/bg" >
+
+                <LinearLayout
+                    android:id="@+id/activity_map_ll_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="31dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/shurukuang"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/searchhotel" />
+
+                    <TextView
+                        style="@style/description_v11"
+                        android:id="@+id/activity_hotel_map_tv_searchkey"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="@string/hotel_search"
+                        android:paddingLeft="5dp"
+                        android:singleLine="true"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_map_ll_setdes"
+                android:layout_width="200dp"
+                android:layout_height="47dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/shurukuang"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="显示该范围的酒店"
+                    android:textColor="@android:color/transparent"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/activity_hotelmap_ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom"
+            android:background="@color/common_blue"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+   <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/occlusion"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@anim/progress_round" />
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,82 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_marginRight="@dimen/general_margin"
+            android:background="@drawable/bg_table_4"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_row_heigh" >
+
+                <TextView
+                    android:id="@+id/tv_title_name"
+                    style="@style/spec_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                    android:layout_marginRight="@dimen/general_row_heigh"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/btn_cha"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/general_margin"
+                    android:background="@drawable/blue_cha" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/bottom_container_img_margin_top"
+                android:background="@color/text_color_v3" />
+
+            <TextView
+                android:id="@+id/tv_delete"
+                style="@style/description_v7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_row_heigh"
+                android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                android:layout_marginRight="@dimen/photo_dialiag_margin2"
+                android:gravity="center_vertical"
+                android:text="@string/del_trip_name" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividerHeight"
+                android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                android:layout_marginRight="@dimen/photo_dialiag_margin2"
+                android:background="@drawable/frg_route_line" />
+
+            <TextView
+                android:id="@+id/tv_edit"
+                style="@style/description_v7"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_row_heigh"
+                android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                android:layout_marginRight="@dimen/photo_dialiag_margin2"
+                android:gravity="center_vertical"
+                android:text="@string/edit_trip_name" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/trip_name_dialog.xml -->

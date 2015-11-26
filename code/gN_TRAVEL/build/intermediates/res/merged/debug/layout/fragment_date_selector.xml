@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/date_pick_container_heigh"
+        android:background="@drawable/date_bg_normal"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_preday"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal" 
+            android:background="@drawable/date_bg_selector"
+            >
+
+            <TextView
+                android:id="@+id/tv_preday"
+                style="@style/date_v2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/date_arrow_marginleft"
+                android:drawableLeft="@drawable/date_arrow_left"
+                android:drawablePadding="@dimen/date_text_marginleft"
+                android:gravity="left|center_vertical"
+                android:text="@string/preday" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_today"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:background="@drawable/date_bg_selector"
+            android:layout_weight="1.5" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_today"
+                    style="@style/date_v3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="" 
+                    android:textColor="@color/common_blue"/>
+
+                <ImageView
+                    android:id="@+id/iv3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/hello_world"
+                    android:scaleType="center"
+                    android:src="@drawable/date_arrow_down" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_nextday"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/date_bg_selector"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_nextDay"
+                style="@style/date_v2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/date_arrow_marginleft"
+                android:drawablePadding="@dimen/date_text_marginleft"
+                android:drawableRight="@drawable/date_arrow_right"
+                android:gravity="right|center_vertical"
+                android:text="@string/nextDay" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/fragment_ll_calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:id="@+id/window_filter_animPart"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <com.weiqun.customcalendar.CustomCalendar
+                android:id="@+id/picker_cakendar"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:background="#FFFFFF"
+                android:clipToPadding="false"
+                android:scrollbarStyle="outsideOverlay" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/fragment_date_selector.xml -->

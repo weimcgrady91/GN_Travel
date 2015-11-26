@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@drawable/tripform_title_bg" >
+
+        <ImageView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/return_selector" />
+
+        <TextView
+            android:id="@+id/tv_formtitle"
+            style="@style/title_v1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_title"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/tv_gotrip"
+            style="@style/description_v6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_common_foucs"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:text="继续旅程" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/lv_order_form"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:dividerHeight="1px" />
+
+        <RelativeLayout
+            android:id="@+id/rl_failed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="150dp"
+                android:text="@string/net_refresh"
+                android:textColor="#909da8"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <include layout="@layout/general_loading" />
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_tripform_detail.xml -->

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+ <include layout="@layout/titlebar" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <TextView 
+            style="@style/description_v7"
+            android:id="@+id/activity_hotel_bigimg_tv_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/activity_hotelbigImage_vp"
+            android:layout_marginTop="57dp"
+            />
+        <android.support.v4.view.ViewPager
+            android:id="@+id/activity_hotelbigImage_vp"
+            android:layout_width="fill_parent"
+            android:layout_height="250dp"
+            android:layout_marginTop="25dp"
+            android:layout_centerVertical="true"
+            android:background="@color/text_color_v7" >
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="@color/common_blue" >
+
+        <RelativeLayout
+            android:id="@+id/activity_hotelbigimg_iv_pre"
+            android:layout_width="48dp"
+            android:layout_height="fill_parent"
+            android:background="@null" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="17dp"
+                android:src="@drawable/img_left" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/activity_hotelbigimg_iv_next"
+            android:layout_width="48dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@null" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:src="@drawable/img_right" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/activity_hotelbigImage_tv_index"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="0/0"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_hotelbigimage.xml -->

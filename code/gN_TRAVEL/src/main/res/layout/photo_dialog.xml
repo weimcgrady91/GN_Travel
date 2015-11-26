@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re_photo_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/normal_marginLeftorRight"
+            android:layout_marginRight="@dimen/normal_marginLeftorRight"
+            android:background="@drawable/bg_table_4"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <include layout="@layout/dialog_title" />
+
+            <LinearLayout
+                android:id="@+id/ll_takephoto"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                    android:layout_marginRight="@dimen/photo_dialiag_margin3"
+                    android:background="@drawable/camera" />
+
+                <TextView
+                    style="@style/description_v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/takephone" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividerHeight"
+                android:layout_marginLeft="@dimen/normal_marginLeftorRight2"
+                android:layout_marginRight="@dimen/normal_marginLeftorRight2"
+                android:background="@drawable/frg_route_line" />
+
+            <LinearLayout
+                android:id="@+id/ll_local_photos"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_height"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                    android:layout_marginRight="@dimen/photo_dialiag_margin3"
+                    android:background="@drawable/localphone" />
+
+                <TextView
+                    style="@style/description_v5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/selectbendizhaopian" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

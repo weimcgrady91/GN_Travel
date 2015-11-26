@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/actionbarLayoutId"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/common_blue" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/title_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/return_selector"
+            android:gravity="center_vertical"
+            android:paddingRight="12dp" />
+
+        <Button
+            android:id="@+id/phoned"
+            style="@style/title_v3"
+            android:layout_width="@dimen/general_btn_width"
+            android:layout_height="@dimen/general_btn_heigh"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_margin"
+            android:background="@drawable/title_btn_selector"
+            android:drawableLeft="@drawable/phone"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/custom_service" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9" >
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_details.xml -->

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0d7aff" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            />
+
+<!--         <ImageView -->
+<!--             android:layout_width="35dp" -->
+<!--             android:layout_height="35dp" -->
+<!--             android:src="@drawable/desc_arrow_normal" -->
+<!--             android:layout_toRightOf="@id/tv_title" -->
+<!--             android:scaleType="center" /> -->
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_weekTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/week_v1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/week_v2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/week_v2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/week_v2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/week_v2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/week_v2"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <TextView
+            style="@style/week_v1"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@drawable/dividing_line_horizontal" />
+
+    <!-- <com.weiqun.customcalendar.VerticalViewPager -->
+    <!-- android:id="@+id/pager" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="270dp" /> -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp" />
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/calendar/src/main/res/layout/calendar.xml --><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/calendar/build/intermediates/bundles/debug/res/layout/calendar.xml -->

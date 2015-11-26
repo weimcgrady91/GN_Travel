@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbar_height"
+        android:background="@color/common_blue" >
+
+        <TextView
+            android:id="@+id/tv_title"
+            style="@style/title_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:drawableLeft="@drawable/return_selector"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_orderType"
+            style="@style/title_v1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/general_btn_heigh"
+            android:layout_centerInParent="true"
+            android:background="@drawable/title_btn_selector"
+            android:drawableRight="@drawable/title_arrow_down"
+            android:gravity="center"
+            android:paddingRight="4dp" 
+            android:text="全部订单">
+        </TextView>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/bg"
+            android:dividerHeight="@dimen/general_margin"
+            android:padding="@dimen/general_margin" >
+        </ListView>
+
+        <RelativeLayout
+            android:id="@+id/rl_failed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="150dp"
+                android:text="@string/net_refresh"
+                android:textColor="#909da8"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+        <include layout="@layout/general_loading" />
+    </FrameLayout>
+
+</LinearLayout>

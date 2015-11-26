@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <include layout="@layout/titlebar" />
+
+        <LinearLayout
+            android:id="@+id/ll_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_height"
+            android:layout_margin="@dimen/frg_list_search_btn_margin_right"
+            android:background="@drawable/bg_table"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/frg_list_search_btn_margin_right"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/searchhotel" />
+
+            <EditText
+                android:id="@+id/et_search"
+                style="@style/description_v21"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:background="@android:color/transparent"
+                android:hint="@string/hint_string" />
+
+            <ImageView
+                android:id="@+id/img_delete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="center"
+                android:src="@drawable/delete"
+                android:visibility="invisible" >
+            </ImageView>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg" >
+
+            <ListView
+                android:id="@+id/searchLv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/dividing_line_horizontal"
+                android:dividerHeight="0.5dp"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/listview_selector"
+                android:scrollbars="none"  >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/rl_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@drawable/dividing_line_horizontal"
+                    android:dividerHeight="0.5dp"
+                    android:footerDividersEnabled="true"
+                    android:listSelector="@drawable/listview_selector"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <TextView
+                    android:id="@+id/tv"
+                    style="@style/description_v20"
+                    android:layout_width="@dimen/city_hint_dialog"
+                    android:layout_height="@dimen/city_hint_dialog"
+                    android:layout_centerInParent="true"
+                    android:background="@color/city_list_title"
+                    android:gravity="center"
+                    android:text="A" />
+
+                <LinearLayout
+                    android:id="@+id/ll_right_index"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:orientation="vertical" >
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</FrameLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_choose_city.xml -->

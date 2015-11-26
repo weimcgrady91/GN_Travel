@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/occlusion"
+    android:gravity="bottom">
+
+    <LinearLayout
+        android:id="@+id/window_filter_animPart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="#FF868686"
+        android:gravity="bottom" >
+
+        <ListView
+            android:id="@+id/window_price_lv"
+            android:layout_width="fill_parent"
+            android:dividerHeight="@dimen/dividerHeight"
+            android:divider="@drawable/dividing_line_horizontal"
+            android:layout_height="wrap_content" >
+        </ListView>
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/window_price.xml -->

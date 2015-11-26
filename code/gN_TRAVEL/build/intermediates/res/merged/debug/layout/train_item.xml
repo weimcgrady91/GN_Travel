@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/flight_item_h"
+    android:minHeight="@dimen/flight_item_h" >
+
+    <TextView
+        android:id="@+id/tv_train_start_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/bottom_container_img_margin_right"
+        android:layout_marginTop="@dimen/bottom_container_img_margin_right" />
+
+    <TextView
+        android:id="@+id/tv_train_end_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_train_start_time"
+        android:layout_below="@id/tv_train_start_time" />
+
+    <TextView
+        android:id="@+id/tv_train_start"
+        android:layout_width="@dimen/actionbar_title_w"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_start_time"
+        android:layout_marginLeft="@dimen/bottom_container_img_margin_right"
+        android:layout_toRightOf="@id/tv_train_start_time" />
+
+    <TextView
+        android:id="@+id/tv_train_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_end_time"
+        android:layout_alignLeft="@id/tv_train_start" />
+
+    <TextView
+        android:id="@+id/tv_train_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_start"
+        android:layout_toRightOf="@id/tv_train_start" />
+
+    <TextView
+        android:id="@+id/tv_train_total_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_stop"
+        android:layout_alignLeft="@id/tv_train_name" />
+
+    <TextView
+        android:id="@+id/tv_train_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/bottom_container_img_margin_right"
+        android:gravity="bottom" />
+
+    <TextView
+        android:id="@+id/img_tarin_item_dollor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_price"
+        android:layout_toLeftOf="@id/tv_train_price"
+        android:text="@string/dollor"
+         />
+
+    <TextView
+        android:id="@+id/tv_train_type_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_total_distance"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/bottom_container_img_margin_right" />
+
+    <TextView
+        android:id="@+id/tv_train_total_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/tv_train_type_name"
+        android:layout_alignRight="@id/img_tarin_item_dollor"
+        android:visibility="gone" />
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/train_item.xml -->

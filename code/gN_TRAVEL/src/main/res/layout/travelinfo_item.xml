@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height" 
+    android:minHeight="@dimen/actionbar_height"
+    android:background="@drawable/bg_order_item">
+	
+    <ImageView
+        android:id="@+id/img_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/flg_list_item_marginLeftorRight" />
+
+    <TextView
+        android:id="@+id/tv_takeOffDate"
+        style="@style/description_v18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/img"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/flg_list_item_marginLeftorRight">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/flg_list_item_marginLeftorRight"
+        android:layout_centerVertical="true" >
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:minHeight="47dp" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:background="@drawable/dividing_line_horizontal"/>
+
+    <TextView
+        android:id="@+id/activity_hotelorder_tv_roomnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="13dp"
+        android:text="一间"
+		style="@style/description_v10" />
+
+    <RadioButton
+        android:id="@+id/activity_hotelorder_rv_roomnum"
+        style="@style/RadioButtonStyles"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/flg_list_item_marginLeftorRight" />
+
+</RelativeLayout>

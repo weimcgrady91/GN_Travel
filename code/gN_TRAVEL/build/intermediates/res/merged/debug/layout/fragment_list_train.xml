@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/ll_train"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_train"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/date_pick_container_heigh"
+            android:background="@drawable/bg"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll_preday_train"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/date_arrow_marginleft"
+                    android:scaleType="center"
+                    android:src="@drawable/date_arrow_left" />
+
+                <TextView
+                    android:id="@+id/tv_preday_train"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/date_text_marginleft"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:text="@string/preday" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_today_train"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_today_train"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="" />
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/hello_world"
+                        android:scaleType="center"
+                        android:src="@drawable/date_arrow_down" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_nextday_train"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_nextDay_train"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/date_text_marginleft"
+                    android:layout_weight="1"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/nextDay" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/date_arrow_marginleft"
+                    android:layout_weight="0"
+                    android:scaleType="center"
+                    android:src="@drawable/date_arrow_right" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            android:background="@drawable/dividing_line_horizontal" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_failed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" >
+
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/list_train"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@drawable/dividing_line_horizontal"
+                        android:dividerHeight="@dimen/dividerHeight"
+                        android:footerDividersEnabled="true"
+                        android:listSelector="@drawable/listview_selector"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom_train"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/frg_route_margintop"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0"
+                    android:background="@color/common_blue"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/orderbytime_train"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_orderbytime_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                                android:contentDescription="@string/hello_world"
+                                android:scaleType="center"
+                                android:src="@drawable/img_start_time_select" />
+
+                            <TextView
+                                android:id="@+id/tv_orderbytime_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                                android:text="@string/starttrain" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_orderbytime_train_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/bottom_container_img_margin_right"
+                            android:contentDescription="@string/hello_world"
+                            android:scaleType="center"
+                            android:src="@drawable/asc_arrow" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/bottom_fengeline_w"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bottom_cut_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/orderby_count_time_train"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_orderby_count_time_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                                android:contentDescription="@string/hello_world"
+                                android:scaleType="center"
+                                android:src="@drawable/img_waste_time_no_select" />
+
+                            <TextView
+                                android:id="@+id/tv_orderby_count_time_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                                android:text="@string/waste" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_orderby_count_time_train_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/bottom_container_img_margin_right"
+                            android:contentDescription="@string/hello_world"
+                            android:scaleType="center"
+                            android:src="@drawable/asc_arrow"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/bottom_fengeline_w"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bottom_cut_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/orderbyprice_train"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_orderbyprice_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                                android:contentDescription="@string/hello_world"
+                                android:scaleType="center"
+                                android:src="@drawable/price_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_orderbyprice_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                                android:text="@string/price" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_orderbyprice_train_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/bottom_container_img_margin_right"
+                            android:contentDescription="@string/hello_world"
+                            android:scaleType="center"
+                            android:src="@drawable/asc_arrow"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/bottom_fengeline_w"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bottom_cut_line" />
+
+                    <RelativeLayout
+                        android:id="@+id/screening_train"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_screening_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                                android:contentDescription="@string/hello_world"
+                                android:scaleType="center"
+                                android:src="@drawable/screening_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_screening_train"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                                android:text="@string/screening" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_occlusionbg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/occlusion"
+                android:visibility="gone" >
+            </ImageView>
+
+            <com.weiqun.customcalendar.CustomCalendar
+                android:id="@+id/cv_list_train"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_shaixuan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/occlusion"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/re_searchContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/ll_shaixuan_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_row_heigh"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btn_shaixuan_cancel"
+                        android:layout_width="@dimen/frg_list_search_btn_w"
+                        android:layout_height="@dimen/frg_list_search_btn_h"
+                        android:background="@drawable/white_btn_selector"
+                        android:text="@string/cancel" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btn_shaixuan_null"
+                        android:layout_width="@dimen/general_search_btn_cancel_width"
+                        android:layout_height="@dimen/frg_list_search_btn_h"
+                        android:background="@drawable/white_btn_pressed"
+                        android:text="@string/cancelshaixuan" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/btn_shaixuan_sure"
+                        android:layout_width="@dimen/frg_list_search_btn_w"
+                        android:layout_height="@dimen/frg_list_search_btn_h"
+                        android:background="@drawable/white_btn_selector"
+                        android:text="@string/ok" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividerHeight"
+                android:layout_below="@id/ll_shaixuan_title"
+                android:background="@drawable/frg_route_line" />
+
+            <HorizontalScrollView
+                android:id="@+id/hs_shaixuan_addview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_shaixuan_title"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:scrollbars="none"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/ll_shaixuan_addview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/actionbar_arrow_w"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hs_shaixuan_addview" >
+
+                <LinearLayout
+                    android:id="@+id/ll_trains_shaixuan"
+                    android:layout_width="@dimen/frg_list_search_left_table_w"
+                    android:layout_height="@dimen/listview_h"
+                    android:background="@drawable/search_bg"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/re_tarins_shaixuan_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selected_table" >
+
+                        <TextView
+                            android:id="@+id/btn_tarins_shaixuan_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/traintype" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/re_tarins_shaixuan_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selected_table" >
+
+                        <TextView
+                            android:id="@+id/btn_tarins_shaixuan_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/seattype" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/re_tarins_shaixuan_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selected_table" >
+
+                        <TextView
+                            android:id="@+id/btn_tarins_shaixuan_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/starttime" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/re_tarins_shaixuan_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selected_table" >
+
+                        <TextView
+                            android:id="@+id/btn_tarins_shaixuan_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:gravity="center"
+                            android:text="@string/arrivetime" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/ll_trains_shaixuan"
+                    android:background="@drawable/search_left_table" >
+
+                    <ListView
+                        android:id="@+id/lv_trains_shuaixuan_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/listview_h"
+                        android:divider="@null"
+                        android:listSelector="@drawable/listview_selector" />
+
+<!--                     <ListView -->
+<!--                         android:id="@+id/lv_trains_shuaixuan_2" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="@dimen/listview_h" -->
+<!--                         android:divider="@null" -->
+<!--                         android:listSelector="@drawable/listview_selector" -->
+<!--                         android:visibility="invisible" /> -->
+
+<!--                     <ListView -->
+<!--                         android:id="@+id/lv_trains_shuaixuan_3" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="@dimen/listview_h" -->
+<!--                         android:divider="@null" -->
+<!--                         android:listSelector="@drawable/listview_selector" -->
+<!--                         android:visibility="invisible" /> -->
+
+<!--                     <ListView -->
+<!--                         android:id="@+id/lv_trains_shuaixuan_4" -->
+<!--                         android:layout_width="wrap_content" -->
+<!--                         android:layout_height="@dimen/listview_h" -->
+<!--                         android:divider="@null" -->
+<!--                         android:listSelector="@drawable/listview_selector" -->
+<!--                         android:visibility="invisible" /> -->
+                </RelativeLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dividerHeight"
+                    android:background="@drawable/frg_route_line" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@anim/progress_round" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/fragment_list_train.xml -->

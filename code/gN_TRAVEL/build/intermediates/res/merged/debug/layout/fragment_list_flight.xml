@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/date_pick_container_heigh"
+            android:baselineAligned="false"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/ll_preday"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/date_bg_selector" >
+
+                <ImageView
+                    android:id="@+id/iv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/date_pick_arrow_margin"
+                    android:contentDescription="@string/hello_world"
+                    android:scaleType="center"
+                    android:src="@drawable/date_arrow_left" />
+
+                <TextView
+                    android:id="@+id/tv_preday"
+                    style="@style/date_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/date_pick_text_margin"
+                    android:layout_toRightOf="@id/iv1"
+                    android:text="@string/preday" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_today"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1.5"
+                android:background="@drawable/date_bg_selector" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/tv_today"
+                        style="@style/date_v3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text=""
+                        android:textColor="@color/common_blue" />
+
+                    <ImageView
+                        android:id="@+id/iv3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/hello_world"
+                        android:scaleType="center"
+                        android:src="@drawable/date_arrow_down" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_nextday"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/date_bg_selector" >
+
+                <ImageView
+                    android:id="@+id/iv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/date_pick_arrow_margin"
+                    android:contentDescription="@string/hello_world"
+                    android:scaleType="center"
+                    android:src="@drawable/date_arrow_right" />
+
+                <TextView
+                    android:id="@+id/tv_nextDay"
+                    style="@style/date_v2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/date_pick_text_margin"
+                    android:layout_toLeftOf="@id/iv2"
+                    android:text="@string/nextDay" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- <ImageView -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="0.5dp" -->
+        <!-- android:background="@drawable/dividing_line_horizontal" /> -->
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/ll_center"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical"
+                android:visibility="visible" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_failed"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" >
+						<ImageView 
+						    android:id="@+id/img_face_wifi"
+						    android:layout_height="wrap_content"
+						   android:layout_width="wrap_content"
+						   android:layout_centerHorizontal="true"
+						   android:layout_marginTop="101dp"
+						   
+						    />
+                        <TextView
+                            android:id="@+id/btn_refresh"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="103dp"
+                            android:text="@string/net_refresh"
+                            android:textColor="#909da8"
+                            android:textSize="28px" />
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:cacheColorHint="#00000000"
+                        android:divider="@drawable/dividing_line_horizontal"
+                        android:dividerHeight="0.5dp"
+                        android:footerDividersEnabled="true"
+                        android:listSelector="@drawable/listview_selector"
+                        android:visibility="visible" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/bottom_h"
+                    android:layout_gravity="bottom"
+                    android:layout_weight="0"
+                    android:background="@color/common_blue"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:id="@+id/orderbytime"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector2" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_takeoff"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                                android:contentDescription="@string/hello_world"
+                                android:scaleType="center"
+                                android:src="@drawable/takeoff_selected" />
+
+                            <TextView
+                                android:id="@+id/tv_takeOffStr"
+                                style="@style/description_v3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                                android:text="@string/takeOff" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_orderbytime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/bottom_container_img_margin_right"
+                            android:contentDescription="@string/hello_world"
+                            android:scaleType="center"
+                            android:src="@drawable/asc_arrow" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/bottom_fengeline_w"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bottom_cut_line"
+                        android:contentDescription="@string/hello_world" />
+
+                    <RelativeLayout
+                        android:id="@+id/orderbyprice"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector2" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_price"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                                android:contentDescription="@string/hello_world"
+                                android:scaleType="center"
+                                android:src="@drawable/price_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_priceStr"
+                                style="@style/description_v4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                                android:text="@string/price" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/img_orderbyprice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/bottom_container_img_margin_right"
+                            android:contentDescription="@string/hello_world"
+                            android:scaleType="center"
+                            android:src="@drawable/asc_arrow"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:layout_width="@dimen/bottom_fengeline_w"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bottom_cut_line"
+                        android:contentDescription="@string/hello_world" />
+
+                    <RelativeLayout
+                        android:id="@+id/screening"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_selector2" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_saixuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/img_screening"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                                android:contentDescription="@string/hello_world"
+                                android:scaleType="center"
+                                android:src="@drawable/screening_normal" />
+
+                            <TextView
+                                android:id="@+id/tv_screeningStr"
+                                style="@style/description_v4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                                android:text="@string/screening"
+                                 />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/iv_search_dot"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/general_margin"
+                            android:layout_marginTop="@dimen/general_margin"
+                            android:layout_toRightOf="@id/ll_saixuan"
+                            android:background="@drawable/dot"
+                            android:visibility="gone" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/img_occlusionbg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/occlusion"
+                android:visibility="gone" >
+            </ImageView>
+
+            <com.weiqun.customcalendar.CustomCalendar
+                android:id="@+id/cv_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg"
+                android:clipToPadding="false"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/occlusion"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:id="@+id/searchContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/search_bg"
+            android:clickable="false"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_row_heigh" >
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    style="@style/button_v1"
+                    android:layout_width="@dimen/general_btn_width"
+                    android:layout_height="@dimen/general_btn_heigh"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:background="@drawable/white_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/btn_clear"
+                    style="@style/button_v1"
+                    android:layout_width="@dimen/general_search_btn_cancel_width"
+                    android:layout_height="@dimen/general_btn_heigh"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/white_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/cancel_search" />
+
+                <Button
+                    android:id="@+id/btn_ok"
+                    style="@style/button_v1"
+                    android:layout_width="@dimen/general_btn_width"
+                    android:layout_height="@dimen/general_btn_heigh"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/general_margin"
+                    android:background="@drawable/white_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/ok" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/container"
+                android:background="@drawable/dividing_line_horizontal" />
+
+            <HorizontalScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/general_row_heigh"
+                android:layout_below="@id/container"
+                android:overScrollMode="never"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:visibility="gone" >
+
+                <LinearLayout
+                    android:id="@+id/conditions"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/general_margin_half"
+                    android:layout_marginRight="@dimen/general_margin_half"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/leftTable"
+                android:layout_alignTop="@+id/leftTable"
+                android:layout_below="@id/scrollView"
+                android:layout_toRightOf="@+id/leftTable"
+                android:background="@drawable/search_left_table" >
+
+                <ListView
+                    android:id="@+id/searchList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000"
+                    android:divider="@null"
+                    android:listSelector="@drawable/listview_selector" >
+                </ListView>
+
+                <LinearLayout
+                    android:id="@+id/ll_airport"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="0dp"
+                    android:visibility="gone" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/general_search_left_table_width"
+                            android:layout_height="@dimen/general_row_heigh"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/dportcode" />
+
+                        <ListView
+                            android:id="@+id/dAirPortList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:cacheColorHint="#00000000"
+                            android:divider="@null"
+                            android:listSelector="@drawable/listview_selector" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/dividing_line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/general_search_left_table_width"
+                            android:layout_height="@dimen/general_row_heigh"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/aportcode" />
+
+                        <ListView
+                            android:id="@+id/aAirPortList"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:divider="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/leftTable"
+                android:layout_width="@dimen/general_search_left_table_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@id/scrollView"
+                android:background="@drawable/_search_left_table" >
+
+                <RelativeLayout
+                    android:id="@+id/btn_takeOff"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_row_heigh" >
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="@string/takeoff" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_airlineCompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_row_heigh"
+                    android:layout_below="@id/btn_takeOff"
+                    android:background="@drawable/selected_table" >
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+                        android:text="@string/airlineCompany" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_craftType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_row_heigh"
+                    android:layout_below="@id/btn_airlineCompany" >
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+                        android:text="@string/craftType" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_classType"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_row_heigh"
+                    android:layout_below="@id/btn_craftType" >
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+                        android:text="@string/classType" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/btn_airport"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/general_row_heigh"
+                    android:layout_below="@id/btn_classType" >
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+                        android:text="@string/airport" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@anim/progress_round" />
+    </RelativeLayout>
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/fragment_list_flight.xml -->

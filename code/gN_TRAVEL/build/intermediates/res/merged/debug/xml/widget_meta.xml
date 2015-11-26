@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/widget"
+    android:minHeight="307dp"
+    android:minWidth="359dp"
+    android:previewImage="@drawable/travel_launch"
+    android:resizeMode="none"
+    android:updatePeriodMillis="36000" >
+
+</appwidget-provider><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/xml/widget_meta.xml -->

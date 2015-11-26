@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item android:drawable="@drawable/widget_pre_arrow_pressed" android:state_pressed="true"/> <!-- pressed -->
+    <item android:drawable="@drawable/widget_pre_arrow_pressed" android:state_focused="true"/> <!-- focused -->
+    <item android:drawable="@drawable/widget_pre_arrow_normal" /> <!-- default -->
+</selector><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/drawable/widget_pre_arrow_selector.xml -->

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <TextView
+        style="@style/description_v10"
+        android:id="@+id/item_hotelkeysearch_tv_name"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"/>
+
+    <TextView
+         style="@style/description_v10"
+        android:id="@+id/item_hotelkeysearch_tv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"/>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/item_hotel_keysearch.xml -->

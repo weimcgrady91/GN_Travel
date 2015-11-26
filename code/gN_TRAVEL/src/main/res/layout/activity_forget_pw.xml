@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin2"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_row_heigh"
+            android:background="@drawable/bg_table_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v5"
+                android:layout_width="@dimen/city_hint_dialog"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:text="@string/zhanghao" />
+
+            <ImageView
+                android:id="@+id/img_reg_line"
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                android:layout_marginTop="@dimen/line_top_bottom_distance"
+                android:background="@drawable/dividing_line_vertical" />
+
+            <EditText
+                android:id="@+id/et_forget_id"
+                style="@style/description_v23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:background="@android:color/transparent"
+                android:hint="@string/pleasemobile"
+                android:inputType="phone"
+                android:maxLength="13"
+                android:singleLine="true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/frg_route_margintop2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/general_row_heigh"
+                    android:background="@drawable/bg_table_4"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/description_v5"
+                        android:layout_width="@dimen/city_hint_dialog"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:text="@string/yanzhengma" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dividerHeight"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/margin_bottom_1"
+                        android:layout_marginTop="@dimen/margin_bottom_1"
+                        android:background="@drawable/dividing_line_vertical" />
+
+                    <EditText
+                        android:id="@+id/et_forget_yanzheng"
+                        style="@style/description_v23"
+                        android:layout_width="@dimen/frg_list_search_left_table_w"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:background="@android:color/transparent"
+                        android:hint="@string/pleaseyanzhengcode"
+                        android:inputType="phone"
+                        android:maxLength="4"
+                        android:singleLine="true" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="@dimen/general_btn_width"
+                    android:layout_height="wrap_content" 
+                    >
+
+                    <ImageView
+                        android:id="@+id/tv_forget_bendi_yanzheng"
+                        style="@style/description_v19"
+                        android:layout_width="@dimen/general_btn_width"
+                        android:layout_height="@dimen/actionbar_group_h"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:gravity="center"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/loading_fail"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_dialog"
+                        style="@style/description_v19"
+                        android:layout_width="@dimen/order_ll_height"
+                        android:layout_height="@dimen/order_ll_height"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:background="@anim/part_progress_round"
+                        android:layout_centerInParent="true"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_refresh_yanzheng_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:background="@drawable/refresh_yanzheng_code" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_forget_get_yanzheng_code"
+        style="@style/button_v4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_marginLeft="@dimen/normal_marginLeftorRight"
+        android:layout_marginRight="@dimen/normal_marginLeftorRight"
+        android:layout_marginTop="@dimen/frg_route_margintop2"
+        android:background="@drawable/red_btn_selector"
+        android:text="@string/getcode" />
+
+</LinearLayout>

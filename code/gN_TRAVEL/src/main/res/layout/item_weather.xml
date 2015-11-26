@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_city"
+                style="@style/Spec_weather_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp" />
+
+            <TextView
+                android:id="@+id/activity_weather_tv_week"
+                style="@style/Spec_weather_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="17dp"
+            android:layout_marginTop="6dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_pm"
+                style="@style/Spec_weather_60d4d4_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/pm_top"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/activity_weather_tv_pm_bottom"
+                style="@style/Spec_weather_8"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pm_bottom"
+                android:gravity="center"
+                android:text="PM2.5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/activity_weather_tv_wendu_current"
+            style="@style/Spec_weather_57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:text="℃" />
+
+            <TextView
+                android:id="@+id/activity_weather_tv_weather"
+                style="@style/Spec_weather_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_marginBottom="23dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/weather_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_wendu"
+                style="@style/Spec_weather_5a8495_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/wendu"
+                android:drawablePadding="3dp"/>
+
+            <TextView
+                android:id="@+id/activity_weather_tv_fengli"
+                style="@style/Spec_weather_5a8495_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/fengli"
+                android:drawablePadding="3dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="17dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_shidu"
+                style="@style/Spec_weather_5a8495_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/shidu"
+                android:drawablePadding="3dp" />
+
+            <TextView
+                android:id="@+id/activity_weather_tv_zhuozhuang"
+                style="@style/Spec_weather_5a8495_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/zhuozhuang"
+                android:drawablePadding="3dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="17dp" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_ziwaixian"
+                style="@style/Spec_weather_5a8495_20"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ziwaixian"
+                android:drawablePadding="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView 
+        android:id="@+id/activity_weather_tv_updatetime"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        style="@style/Spec_weather_5a8495_14"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="25dp"
+        android:text="更新于 09-02 10:30"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/weather_bottom_bg_orange"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_week_first"
+                style="@style/Spec_weather_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp" />
+
+            <ImageView
+                android:id="@+id/activity_weather_iv_tianqi_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/activity_weather_tv_tianqi_first"
+                style="@style/Spec_weather_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/activity_weather_tv_dushu_first"
+                style="@style/Spec_weather_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/weather_bottom_bg_blue"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_week_second"
+                style="@style/Spec_weather_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/activity_weather_iv_tianqi_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/activity_weather_tv_tianqi_second"
+                style="@style/Spec_weather_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/activity_weather_tv_dushu_second"
+                style="@style/Spec_weather_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/weather_bottom_bg_green"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/activity_weather_tv_week_three"
+                style="@style/Spec_weather_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"/>
+
+            <ImageView
+                android:id="@+id/activity_weather_iv_tianqi_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:id="@+id/activity_weather_tv_tianqi_three"
+                style="@style/Spec_weather_18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/activity_weather_tv_dushu_three"
+                style="@style/Spec_weather_16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

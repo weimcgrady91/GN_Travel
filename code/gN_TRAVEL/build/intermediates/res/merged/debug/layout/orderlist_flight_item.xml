@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_order_item_heigh"
+    android:background="@drawable/bg_table"
+    android:minHeight="@dimen/list_order_item_heigh"
+    android:orientation="horizontal"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="7"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/description_v10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:text="MU1256" />
+
+        <TextView
+            android:id="@+id/tv_orderAirPort"
+            style="@style/description_v10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:singleLine="true"
+            android:text="首都国际机场  -  上海虹桥机场"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_orderId"
+            style="@style/description_v10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="订单编号   1058600866" />
+
+        <TextView
+            android:id="@+id/tv_orderTakeOffDate"
+            style="@style/description_v10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:text="出发日期   2014.1.26" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:padding="0dp" >
+
+        <ImageView
+            android:id="@+id/img_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_margin"
+            android:src="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/tv_orderPrice"
+            style="@style/spec_v2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/general_margin"
+            android:layout_toLeftOf="@id/img_arrow"
+            android:text="760" />
+
+        <TextView
+            android:id="@+id/tv_dollar"
+            style="@style/base_v3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@id/tv_orderPrice"
+            android:text="￥"
+            android:textColor="@color/text_color_v7" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="8dp"
+            android:background="@color/common_green">
+
+            <TextView
+                android:id="@+id/tv_orderState"
+                style="@style/description_v15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="全部退款" 
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/orderlist_flight_item.xml -->

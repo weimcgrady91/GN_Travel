@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/slt_newtrip_patten_map" android:state_pressed="true"></item>
+    <item android:drawable="@drawable/startroute_frg_text_bg_focuse" android:state_focused="true"></item>
+    <item android:drawable="@drawable/slt_newtrip_patten_map"></item>
+
+</selector><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/drawable/swap_selector.xml -->

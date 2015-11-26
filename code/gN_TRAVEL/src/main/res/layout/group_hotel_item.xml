@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="62dp"
+    android:gravity="center_vertical"
+    android:minHeight="62dp"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/slt_newtrip_ic_hotel" />
+
+    <TextView
+        android:id="@+id/tv_checkInDate"
+        style="@style/list_v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="0"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true" 
+        android:text="12/25"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        style="@style/list_v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="right"
+        android:singleLine="true" 
+        android:text="上海威尼斯汀国际大酒店"/>
+
+</LinearLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/register_input_pw_title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin2"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/general_row_heigh"
+            android:background="@drawable/bg_table_4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_pw_text"
+                style="@style/description_v5"
+                android:layout_width="@dimen/city_hint_dialog"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:text="@string/password" />
+
+            <ImageView
+                android:id="@+id/img_forget_finish"
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                android:layout_marginTop="@dimen/line_top_bottom_distance"
+                android:layout_toRightOf="@+id/tv_pw_text"
+                android:background="@drawable/dividing_line_vertical" />
+
+            <EditText
+                android:id="@+id/et_forget_password"
+                style="@style/description_v23"
+                android:layout_width="@dimen/address_width"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_toRightOf="@id/img_forget_finish"
+                android:background="@android:color/transparent"
+                android:hint="@string/pleasepasswrd"
+                android:maxLength="16"
+                android:password="true"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/img_forget_ming_or_an"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:background="@drawable/an_code"
+                android:text="@string/sendyanzhengcode" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_forget_pw_guize"
+            style="@style/description_v14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_marginTop="@dimen/general_margin"
+            android:text="@string/passwordguize2" />
+
+        <TextView
+            android:id="@+id/tv_forget_pw_guize2"
+            style="@style/description_v14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_marginTop="@dimen/general_margin"
+            android:text="@string/passwordguize" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_forget_finish"
+        style="@style/button_v4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_row_heigh"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin"
+        android:background="@drawable/red_btn_selector"
+        android:text="@string/finish" />
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_forget_finish.xml -->

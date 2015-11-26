@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_form_title"
+        android:background="@color/common_bg"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_order_form_hotal_name"
+            style="@style/list_v6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:paddingLeft="14dp"
+            android:text="大连北站新都汇酒店式公寓" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_order_form_number"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/tv_order_form_number_tv"
+            style="@style/description_v12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/order_form_num" />
+
+        <TextView
+            android:id="@+id/tv_order_form_hotal_number"
+            style="@style/list_v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_order_form_number_tv"
+            android:layout_below="@id/tv_order_form_number_tv"
+            android:paddingTop="6dp"
+            android:text="158656965215" />
+
+        <ImageView
+            android:id="@+id/img_hotel_order_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/slt_common_list_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/tv_roomType_str"
+            style="@style/description_v12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/room_type" />
+
+        <TextView
+            android:id="@+id/tv_order_form_hotal_type"
+            style="@style/list_v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_roomType_str"
+            android:layout_below="@id/tv_roomType_str"
+            android:paddingTop="6dp"
+            android:text="158656965215" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/tv_checkInTime_str"
+            style="@style/description_v12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/hotal_ruzhu_time" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_checkInTime_str"
+            android:layout_below="@id/tv_checkInTime_str"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_order_form_hotal_ruzhu_from_time"
+                style="@style/list_v4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11月07日" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/slt_newtrip_transmit_right_gray" />
+
+            <TextView
+                android:id="@+id/tv_order_form_hotal_ruzhu_to_time"
+                style="@style/list_v4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11月08日" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/re_order_form_hotal_tel"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/tv_order_form_hotal_tel"
+            style="@style/description_v12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/order_form_hotal_tel" />
+
+        <TextView
+            android:id="@+id/tv_order_form_hotal_warning"
+            style="@style/list_v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_order_form_hotal_tel"
+            android:layout_below="@id/tv_order_form_hotal_tel"
+            android:paddingTop="6dp"
+            android:text="158656965215" />
+
+        <include layout="@layout/divider" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@color/common_divider" />
+
+    <include
+        android:id="@+id/way"
+        layout="@layout/way" />
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:id="@+id/re_hotel_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tv_hotal_address"
+            style="@style/description_v12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/address" />
+
+        <TextView
+            android:id="@+id/tv_order_address"
+            style="@style/list_v4"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_hotal_address"
+            android:layout_below="@id/tv_hotal_address"
+            android:paddingBottom="16dp"
+            android:paddingTop="6dp"
+            android:text="大连市大连北站、体育中心华北路496A号1-4-1" />
+
+        <ImageView
+            android:id="@+id/img_hotel_address_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/slt_common_list_next" />
+    </RelativeLayout>
+
+    <include layout="@layout/divider" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="66dp" >
+
+        <TextView
+            android:id="@+id/tv_ruzhuren_str"
+            style="@style/description_v12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/checkinroom" />
+
+        <TextView
+            android:id="@+id/tv_order_form_hotal_person"
+            style="@style/list_v4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tv_ruzhuren_str"
+            android:layout_below="@id/tv_ruzhuren_str"
+            android:paddingTop="6dp"
+            android:text="李雷、韩梅梅" />
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/tripform_hotaldetail_item.xml -->

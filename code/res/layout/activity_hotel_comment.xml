@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/no_data"
+            style="@style/Spec_weather_20"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@drawable/no_comm_bg"
+            android:gravity="center"
+            android:text="@string/no_comment"
+            android:textColor="@color/text_color_v3"
+            android:visibility="gone" />
+
+        <ListView
+            android:id="@+id/activity_hotelcomment_lv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/shurukuang"
+            android:divider="@drawable/dividing_line_horizontal"
+            android:dividerHeight="@dimen/dividerHeight"
+            android:focusable="false"
+            android:listSelector="@null"
+            android:visibility="gone" >
+        </ListView>
+         <RelativeLayout
+            android:id="@+id/rl_failed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/wifi"/>
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_failed"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="100dp"
+                android:text="@string/net_refresh"
+                android:textColor="#909da8"
+                android:textSize="28px" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

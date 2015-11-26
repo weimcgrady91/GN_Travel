@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_widget_item"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/widget_list_item_heigh"
+    android:minHeight="@dimen/widget_list_item_heigh"
+    android:orientation="vertical" 
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tv_tripName"
+        style="@style/title_v1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="20dp"
+        android:textColor="#666666"/>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/widget_triplist_item.xml -->

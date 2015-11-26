@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="@dimen/list_general_item_heigh" 
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/takeOffTime"
+        style="@style/list_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/general_margin2"
+        android:text="06:35" />
+
+    <TextView
+        android:id="@+id/departCity"
+        style="@style/list_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/takeOffTime"
+        android:layout_marginLeft="@dimen/general_margin2"
+        android:layout_toRightOf="@id/takeOffTime"
+        android:text="北京" />
+
+    <TextView
+        android:id="@+id/flight"
+        style="@style/list_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/takeOffTime"
+        android:layout_marginLeft="@dimen/general_margin2"
+        android:layout_toRightOf="@id/departCity"
+        android:text="南航CZ6412" />
+
+    <TextView
+        android:id="@+id/price"
+        style="@style/spec_v2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/takeOffTime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/general_margin2"
+        android:text="570" />
+
+    <TextView
+        android:id="@+id/tv_dollar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/takeOffTime"
+        android:layout_marginRight="1dp"
+        android:layout_toLeftOf="@id/price"
+        android:text="￥"
+        android:textColor="@color/text_color_v7"
+        style="@style/base_v3" />
+
+    <TextView
+        android:id="@+id/arriveTime"
+        style="@style/list_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/takeOffTime"
+        android:layout_below="@id/takeOffTime"
+        android:text="06:35" />
+
+    <TextView
+        android:id="@+id/arriveCity"
+        style="@style/list_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/arriveTime"
+        android:layout_alignLeft="@id/departCity"
+        android:layout_below="@id/departCity"
+        android:text="上海" />
+
+    <TextView
+        android:id="@+id/dJClass"
+        style="@style/list_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/arriveTime"
+        android:layout_alignLeft="@id/flight"
+        android:layout_below="@id/flight"
+        android:text="经济舱" />
+
+    <TextView
+        android:id="@+id/rate"
+        style="@style/list_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/arriveTime"
+        android:layout_alignRight="@id/price"
+        android:text="4.0折" />
+
+    <TextView
+        android:id="@+id/quantity"
+        style="@style/list_v3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/arriveTime"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/rate"
+        android:text="4张" />
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/flight_item.xml -->

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+
+    <item
+        android:drawable="@drawable/load2_1"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_2"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_3"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_4"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_5"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_6"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_7"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_8"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_9"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_10"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_11"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_12"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_13"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_14"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_15"
+        android:duration="80"/>
+    <item
+        android:drawable="@drawable/load2_16"
+        android:duration="80"/>
+
+</animation-list><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/anim/progress_round2.xml -->

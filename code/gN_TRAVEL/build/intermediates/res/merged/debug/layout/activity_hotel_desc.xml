@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:id="@+id/sv_hotel_desc"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_table_top"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/description_v7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp"
+                        android:text="地址" />
+
+                    <TextView
+                        android:id="@+id/activity_hoteldesc_tv_address"
+                        style="@style/description_v11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp"
+                        android:text="黄浦区河南中路88号" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mid_line"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/description_v7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp"
+                        android:text="电话" />
+
+                    <TextView
+                        android:id="@+id/activity_hoteldesc_tv_phone"
+                        style="@style/description_v11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_hotel_desc_ll_facility"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/mid_line"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/description_v7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp"
+                        android:text="设施" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/bg_table_bottom"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        style="@style/description_v7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp"
+                        android:text="简介" />
+
+                    <TextView
+                        android:id="@+id/activity_hoteldesc_tv_desctext"
+                        style="@style/description_v11"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="9dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout
+            android:id="@+id/rl_failed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:src="@drawable/wifi"/>
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_failed"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="100dp"
+                android:text="@string/net_refresh"
+                android:textColor="#909da8"
+                android:textSize="28px" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_hotel_desc.xml -->

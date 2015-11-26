@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_hotel_order_ll"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <include layout="@layout/titlebar" />
+
+        <ScrollView
+            android:id="@+id/activity_sv_order"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/activity_hotel_order_tv_hotelname"
+                    style="@style/description_v10"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="13dp"
+                    android:paddingBottom="13dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_table_top"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/activity_hotel_order_tv_indate"
+                            style="@style/spec_v1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="13dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="13dp" />
+
+                        <TextView
+                            style="@style/description_v10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_inhotel" />
+
+                        <TextView
+                            android:id="@+id/activity_hotel_order_tv_leavedate"
+                            style="@style/spec_v1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="20dp"/>
+
+                        <TextView
+                            style="@style/description_v10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hotel_leavehotel" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/activity_hote_order_ll"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/mid_line"
+                        android:clickable="true"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:text="@string/hotel_room_type" />
+
+                        <TextView
+                            android:id="@+id/activity_hotel_order_tv_roomtype"
+                            style="@style/description_v10"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="13dp"
+                            android:layout_weight="1"
+                            android:gravity="center_vertical" />
+
+                        <TextView
+                            android:id="@+id/activity_hotel_order_tv_roomnum"
+                            style="@style/description_v10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:drawablePadding="3dp"
+                            android:drawableRight="@drawable/arrow_right"
+                            android:gravity="right"
+                            android:paddingRight="5dp"
+                            android:text="@string/hotel_one_room" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_table_bottom"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:id="@+id/activity_hotel_order_tv_inuser"
+                            style="@style/description_v10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:gravity="center_vertical"
+                            android:paddingTop="13dp"
+                            android:paddingBottom="13dp"
+                            android:paddingLeft="5dp"
+                            android:text="@string/checkinroom" />
+
+                        <TextView
+                            android:layout_width="@dimen/dividerHeight"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <LinearLayout
+                            android:id="@+id/activity_hotel_order_ll_cus"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/shurukuang"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                style="@style/description_v10"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingLeft="5dp"
+                                android:text="@string/contactperson" />
+
+                            <TextView
+                                android:layout_width="@dimen/dividerHeight"
+                                android:layout_height="fill_parent"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@drawable/line_horizontal" />
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical" >
+
+                                <RelativeLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content" 
+                                       android:paddingRight="5dp"
+                                    >
+
+                                    <EditText
+                                        android:id="@+id/activity_hotelorder_et_contact"
+                                        style="@style/description_v23"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_toLeftOf="@+id/btn_select_contacts"
+                                        android:background="@null"
+                                        android:hint="@string/name"
+                                        android:paddingLeft="5dp"
+                                        android:paddingTop="13dp"
+                                        android:paddingBottom="13dp"
+                                        android:singleLine="true" />
+
+                            
+                                    <Button
+                                        android:id="@+id/btn_select_contacts"
+                                        style="@style/button_v2"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="@dimen/actionbar_group_h"
+                                        android:layout_alignParentRight="true"
+                                        android:layout_centerVertical="true"
+                                        android:background="@drawable/title_btn_selector"
+                                        android:drawableLeft="@drawable/jiahao"
+                                        android:gravity="center_vertical"
+                                        android:text="@string/addlianxiren" />
+                                </RelativeLayout>
+
+                                <TextView
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="@dimen/dividerHeight"
+                                    android:background="@drawable/line_horizontal" />
+
+                                <EditText
+                                    android:id="@+id/activity_hotelorder_et_phone"
+                                    style="@style/description_v23"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@null"
+                                    android:hint="@string/mobile"
+                                    android:inputType="phone"
+                                    android:maxLength="13"
+                                    android:paddingLeft="5dp"
+                                    android:paddingTop="13dp"
+                                    android:paddingBottom="13dp"
+                                    android:singleLine="true" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/activity_hotel_order_tv_attentiontitle"
+                            style="@style/description_v10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp"
+                            android:text="@string/hotel_attention" />
+
+                        <TextView
+                            android:id="@+id/activity_hotel_order_tv_attention"
+                            style="@style/description_v17"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingBottom="10dp"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="10dp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/activity_ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="198dp"
+                android:layout_height="fill_parent"
+                android:background="@drawable/bottom_blue"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/description_v15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="@string/dollor" />
+
+                <TextView
+                    android:id="@+id/order_tv_orderpice"
+                    style="@style/description_v6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="5dp" />
+
+                <TextView
+                    android:id="@+id/order_tv_roomcount"
+                    style="@style/description_v6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:text="@string/hotel_one_room" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/activity_hotel_order_submitorder"
+                style="@style/description_v6"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bottom_orangle" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/occlusion"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@anim/progress_round2" />
+    </RelativeLayout>
+      <RelativeLayout
+            android:id="@+id/rl_failed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/iv_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/wifi"/>
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_failed"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="100dp"
+                android:text="@string/net_refresh"
+                android:textColor="#909da8"
+                android:textSize="28px" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_add_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/occlusion"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bg"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frg_route_margintop"
+                android:layout_marginLeft="@dimen/normal_marginLeftorRight"
+                android:layout_marginRight="@dimen/normal_marginLeftorRight"
+                android:background="@drawable/bg" >
+
+                <Button
+                    android:id="@+id/btn_add_contact_cancel"
+                    style="@style/description_v7"
+                    android:layout_width="@dimen/frg_list_search_btn_w"
+                    android:layout_height="@dimen/frg_list_search_btn_h"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/white_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/cancel" />
+
+                <Button
+                    android:id="@+id/btn_add_contact_sure"
+                    style="@style/description_v7"
+                    android:layout_width="@dimen/frg_list_search_btn_w"
+                    android:layout_height="@dimen/frg_list_search_btn_h"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/white_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/ok" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/mid_line"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+            >
+
+                <TextView
+                    android:id="@+id/tv_add_contact"
+                    style="@style/spec_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/add"
+                    android:gravity="center_vertical"
+                    android:text="@string/add_contacts_from" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/listview_height"
+                android:background="@drawable/mid_line"
+                android:divider="@drawable/dividing_line_horizontal"
+                android:dividerHeight="@dimen/dividerHeight"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/listview_selector" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

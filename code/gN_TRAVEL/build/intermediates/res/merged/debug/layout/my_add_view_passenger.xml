@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/city_hint_dialog" >
+
+    <!-- <ImageView -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="@dimen/dividerHeight" -->
+    <!-- android:background="@drawable/frg_route_line" /> -->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/city_hint_dialog"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_my_passenger_name"
+            style="@style/description_v7"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/photo_dialiag_margin2"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/photo_dialiag_margin2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_my_passenger_code_titel"
+                style="@style/description_v7"
+                android:layout_width="@dimen/actionbar_title_w"
+                android:layout_height="@dimen/photo_dialiag_margin2"
+                android:gravity="center|left"
+                android:text="@string/shenfenzheng" />
+
+            <TextView
+                android:id="@+id/tv_my_passenger_code"
+                style="@style/spec_v4"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/photo_dialiag_margin2"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btn_my_raw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/date_text_marginleft"
+        android:background="@drawable/arrow" />
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/tv_my_del" -->
+    <!-- style="@style/description_v18" -->
+    <!-- android:layout_width="@dimen/general_btn_width" -->
+    <!-- android:layout_height="@dimen/general_title_heigh" -->
+    <!-- android:layout_alignParentRight="true" -->
+    <!-- android:layout_centerVertical="true" -->
+    <!-- android:layout_marginRight="@dimen/date_text_marginleft" -->
+    <!-- android:background="@drawable/white_btn_selector" -->
+    <!-- android:gravity="center" -->
+    <!-- android:text="@string/delect" /> -->
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/my_add_view_passenger.xml -->

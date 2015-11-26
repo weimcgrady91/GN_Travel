@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+     >
+
+    <include layout="@layout/titlebar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/frg_route_margintop2"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/travel_launch"
+                android:scaleType="center" />
+
+            <TextView
+                style="@style/description_v23"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/actionbar_group_h"
+                android:gravity="center"
+                android:text="@string/new_travel" />
+
+            <TextView
+                android:id="@+id/tv_version_name"
+                style="@style/description_v5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/new_travel" />
+
+            <TextView
+                style="@style/description_v5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frg_route_margintop2"
+                android:gravity="center"
+                android:text="@string/company" />
+
+            <WebView
+                android:id="@+id/wv"
+                style="@style/description_v16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/normal_marginLeftorRight"
+                android:layout_marginRight="@dimen/normal_marginLeftorRight"
+                android:background="@drawable/bg_table_4"
+                android:gravity="center"
+                android:paddingLeft="@dimen/normal_marginLeftorRight"
+                android:paddingRight="@dimen/normal_marginLeftorRight"
+                android:layout_marginBottom="@dimen/normal_marginLeftorRight"
+              />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_about.xml -->

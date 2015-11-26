@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/weather_citymanage_titlebar" />
+
+    <ListView
+        android:background="@drawable/bg"
+        android:id="@+id/activity_weather_lv_city"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:divider="@drawable/dividing_line_horizontal"
+        android:listSelector="@drawable/listview_selector"
+        android:dividerHeight="@dimen/dividerHeight"
+        android:layout_weight="1" >
+    </ListView>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_weather_citymanage.xml -->

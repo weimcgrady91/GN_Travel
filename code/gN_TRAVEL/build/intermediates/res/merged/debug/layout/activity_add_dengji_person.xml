@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/add_dengji_person_title"
+        layout="@layout/title_with_btn" />
+
+    <LinearLayout
+        android:id="@+id/ll_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/add_dengji_person_title"
+        android:layout_marginLeft="@dimen/margin_bottom_1"
+        android:layout_marginRight="@dimen/margin_bottom_1"
+        android:layout_marginTop="@dimen/second_line_marginTop"
+        android:background="@drawable/bg_table_4"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:paddingLeft="@dimen/frg_list_search_btn_margin_right" >
+
+            <TextView
+                style="@style/description_v5"
+                android:layout_width="@dimen/general_btn_width"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/name" />
+
+            <ImageView
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                android:layout_marginTop="@dimen/line_top_bottom_distance"
+                android:background="@drawable/dividing_line_vertical" />
+
+            <EditText
+                android:id="@+id/et_add_dengji_name"
+                style="@style/description_v23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/flg_list_calendar_padding"
+                android:background="@android:color/transparent"
+                android:hint="@string/pleasename"
+                android:singleLine="true"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            android:background="@drawable/frg_route_line" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/actionbar_height"
+            android:paddingLeft="@dimen/frg_list_search_btn_margin_right" >
+
+            <TextView
+                android:id="@+id/tv_title_cradid_or_mobile"
+                style="@style/description_v5"
+                android:layout_width="@dimen/general_btn_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/zhengjianhao" />
+
+            <ImageView
+                android:layout_width="@dimen/dividerHeight"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                android:layout_marginTop="@dimen/line_top_bottom_distance"
+                android:background="@drawable/dividing_line_vertical" />
+
+            <EditText
+                android:id="@+id/et_add_dengji_code"
+                style="@style/description_v23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@android:color/transparent"
+                android:digits="1234567890xX"
+                android:hint="@string/pleasecode"
+                android:maxLength="20"
+                android:paddingLeft="@dimen/flg_list_calendar_padding"
+                android:singleLine="true"
+                android:inputType="phone"
+                android:textCursorDrawable="@null" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_warning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_2"
+        android:layout_marginTop="@dimen/normal_marginLeftorRight" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/description_v18"
+            android:padding="@dimen/second_line_title_marginLeft"
+            android:text="@string/warning" />
+    </LinearLayout>
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_add_dengji_person.xml -->

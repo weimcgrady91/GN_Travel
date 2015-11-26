@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res"><file name="custom_calendar_text_selector" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\color\custom_calendar_text_selector.xml" qualifiers="" type="color"/><file name="bg_calendar_title" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\drawable\bg_calendar_title.9.png" qualifiers="" type="drawable"/><file name="custom_calendar_bg_selector" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\drawable\custom_calendar_bg_selector.xml" qualifiers="" type="drawable"/><file name="calendar_selected_bg" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\drawable-hdpi\calendar_selected_bg.9.png" qualifiers="hdpi" type="drawable"/><file name="desc_arrow_normal" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\drawable-hdpi\desc_arrow_normal.png" qualifiers="hdpi" type="drawable"/><file name="desc_arrow_select" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\drawable-hdpi\desc_arrow_select.png" qualifiers="hdpi" type="drawable"/><file name="dividing_line_horizontal" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\drawable-hdpi\dividing_line_horizontal.9.png" qualifiers="hdpi" type="drawable"/><file name="calendar" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\layout\calendar.xml" qualifiers="" type="layout"/><file name="layout" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\layout\layout.xml" qualifiers="" type="layout"/><file name="month" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\layout\month.xml" qualifiers="" type="layout"/><file name="spec_week_item" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\layout\spec_week_item.xml" qualifiers="" type="layout"/><file name="week" path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\layout\week.xml" qualifiers="" type="layout"/><file path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\values\attrs.xml" qualifiers=""><declare-styleable name="calendar_cell">
+    <attr format="boolean" name="state_selectable"/>
+    <attr format="boolean" name="state_current_month"/>
+    <attr format="boolean" name="state_today"/>
+    <attr format="boolean" name="state_range_first"/>
+    <attr format="boolean" name="state_range_middle"/>
+    <attr format="boolean" name="state_range_last"/>
+    <attr format="boolean" name="state_highlighted"/>
+  </declare-styleable></file><file path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\values\colors.xml" qualifiers=""><color name="divieline_color">#c6c6c6</color><color name="calendar_inactive_month_bg">#ffd7d9db</color><color name="calendar_text_unselectable">#7f778088</color><color name="city_list_title">#e5e5e5</color><color name="not_current_month_text_color">#939393</color><color name="today_text_color">#fd7134</color><color name="calendar_selected_range_bg">#ff96caff</color><color name="calendar_text_selected">#ffffffff</color><color name="date_not_press">#cbcbcb</color><color name="state_selected_text_color">#ffffff</color><color name="calendar_divider">#ffbababa</color><color name="selected_bg_color">#0291d3</color><color name="calendar_highlighted_day_bg">#ccffcc</color><color name="calendar_text_inactive">#40778088</color><color name="calendar_selected_day_bg">#ff379bff</color><color name="normal_text_color">#565656</color><color name="common_blue">#0d7aff</color><color name="calendar_active_month_bg">#fff5f7f9</color><color name="calendar_text_active">#ff778088</color><color name="calendar_bg">#ffffffff</color><color name="date_can_press">#5b5b5b</color></file><file path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\values\dimens.xml" qualifiers=""><dimen name="activity_horizontal_margin">16dp</dimen><dimen name="activity_vertical_margin">16dp</dimen></file><file path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\values\strings.xml" qualifiers=""><string name="day_name_format">EEE</string><string name="action_settings">Settings</string><string name="custom_calendar_Friday">五</string><string name="month_name_format">yyyy\'年\'MM\'月\' </string><string name="custom_calendar_Tuesday">二</string><string name="custom_calendar_Wednesday">三</string><string name="app_name">WeiCalendar</string><string name="custom_calendar_Sunday">日</string><string name="custom_calendar_Saturday">六</string><string name="hello_world">Hello world!</string><string name="custom_calendar_target">出发</string><string name="custom_calendar_monday">一</string><string name="custom_calendar_today">今天</string><string name="custom_calendar_Thursday">四</string></file><file path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\main\res\values\styles.xml" qualifiers=""><style name="custom_calendar_cell_style">
+        <item name="android:background">@drawable/custom_calendar_bg_selector</item>
+        <item name="android:textColor">@color/custom_calendar_text_selector</item>
+        <item name="android:clickable">true</item>
+    </style><style name="cell_item2">
+        <item name="android:textSize">26px</item>
+        <item name="android:textColor">#fd7143</item>
+    </style><style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style><style name="week_v1">
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">#fd7134</item>
+    </style><style name="title">
+        <item name="android:textSize">27px</item>
+        <item name="android:textColor">#f3f3f3</item>
+    </style><style name="week_v2">
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">#7c7c7c</item>
+    </style><style name="cell_item">
+        <item name="android:textSize">27px</item>
+        <item name="android:textColor">#a1a1a1</item>
+        <item name="android:clickable">true</item>
+    </style><style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style></file></source><source path="D:\APK1_GNBJ_TRAVEL\code\calendar\build\generated\res\rs\release"/><source path="D:\APK1_GNBJ_TRAVEL\code\calendar\build\generated\res\resValues\release"/></dataSet><dataSet config="release"><source path="D:\APK1_GNBJ_TRAVEL\code\calendar\src\release\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="calendar_cell"><attr format="boolean" name="state_selectable"/><attr format="boolean" name="state_current_month"/><attr format="boolean" name="state_today"/><attr format="boolean" name="state_range_first"/><attr format="boolean" name="state_range_middle"/><attr format="boolean" name="state_range_last"/><attr format="boolean" name="state_highlighted"/></declare-styleable></configuration></mergedItems></merger>

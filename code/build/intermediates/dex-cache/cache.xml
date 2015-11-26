@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\Android_Location_V1.3.2.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b64d1f38ef7ee28b538d61a39d040f249c65587c">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\Android_Location_V1.3.2-15951606205cacbfa87a2b98a62d826d443cdcff.jar" />
+    </item>
+    <item
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.2.4\a60a5e993c98c864010053cb901b7eab25306568\gson-2.2.4.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\gson-2.2.4-752a4694a6e7953de1b9e1ac68ee96a302f761f3.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\pinyin4j-2.5.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="ae353005f973da1cd8545b54354504c2503f6865">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\pinyin4j-2.5.0-09504870eff423e5286fd7a936d30e79f6227a1c.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\baidumapapi_v3_0_0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b39155228374e50c537705e9bfc10d3f69c2397a">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\baidumapapi_v3_0_0-fad2679900fd4dcdad4f4891e9bf143eb0fa9d78.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\AMap_Services_V2.3.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="0e35992f6d2a018c45fab23e0602fecd5e353ad3">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\AMap_Services_V2.3.0-8c3275882c48842ac9730212af362caa65b18c80.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\commons-httpclient-3.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="964cd74171f427720480efdec40a7c7f6e58426a">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\commons-httpclient-3.1-d9b86b5a92cff2eb398da17c676fbb3e204c1cf7.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\Android_2DMap_V2.4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="d0d5d6f4c13f4b1002dcdd6cc79588e8a7ee995f">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\Android_2DMap_V2.4.0-c09e4cb3545579d027a34177ea73fd4a5a725b2c.jar" />
+    </item>
+    <item
+        jar="D:\tools\android-sdk21-windows\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\support-v4-19.1.0-6221cad820fe93d62b9c767b79813415372c2279.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\locSDK_4.0.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8b405c3054e12d913fa5aafb160c294e642dc673">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\locSDK_4.0-749c9191edcb01615e4386eafbef836fd295e169.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\image1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="eba3ec78458fcb9bdd8bb7eff1a2f6f26f8fa00a">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\image1.1-b6f28ea56d4a08a098a50669a6a61b0d3e929647.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\exploded-aar\code\calendar\unspecified\jars\classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="9812407318a358bd396b40e41d6bc42d07d2ccc3">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\classes-b52f6c1f0f36ec95c4a590b847ac5e33c3f4b01f.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\commons-codec-1.6.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b7f0fc8f61ecadeb3695f0b9464755eee44374d4">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\commons-codec-1.6-dc9a56d1849d546f84b86bcfc2da57d41866e333.jar" />
+    </item>
+    <item
+        jar="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\libs\YouJuAgent1.2.9.b.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="b549c22da8207c2d3759fc7b2a87da5a6236dfab">
+        <dex dex="D:\APK1_GNBJ_TRAVEL\code\gN_TRAVEL\build\intermediates\pre-dexed\debug\YouJuAgent1.2.9.b-5874b2defe57277014cac881de28bf1827cea5fe.jar" />
+    </item>
+
+</items>

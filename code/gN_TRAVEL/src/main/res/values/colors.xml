@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- hdpi -->
+    <color name="text_color_press">#1492c5</color>
+    <color name="list_press">#f2f4f4</color>
+    <color name="common_refresh_bg">#e4e4e4</color>
+    <color name="common_divider">#cccccc</color> 
+    <color name="common_blue">#0d7aff</color>
+   	<color name="common_bg">#e6e6e6</color>
+   	<color name="common_focus">#3d95ff</color>
+   	<color name="common_green">#14c54a</color>
+   	<color name="text_color_v1">#f3f3f3</color>
+   	<color name="text_color_v2">#afcaff</color>
+   	<color name="text_color_v3">#0d7aff</color>
+   	<color name="text_color_v4">#565656</color>
+   	<color name="text_color_v5">#3f3f3f</color>
+   	<color name="text_color_v6">#939393</color>
+   	<color name="text_color_v7">#fd7133</color>
+   	<color name="text_color_v8">#14c54a</color>
+   	<color name="text_color_v9">#a3d6e9</color>
+   	<color name="text_color_v10">#949494</color>
+   	<color name="text_color_v11">#fbfbfb</color>
+    <!-- hdpi -->
+    
+</resources>

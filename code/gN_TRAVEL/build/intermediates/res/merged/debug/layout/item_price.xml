@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:minHeight="47dp" >
+
+    <TextView
+        style="@style/list_v4"
+        android:id="@+id/window_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:text="不限"/>
+
+    <RadioButton
+        android:id="@+id/window_price_rb"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        style="@style/RadioButtonStyles"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/flg_list_item_marginLeftorRight" />
+
+</RelativeLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/item_price.xml -->

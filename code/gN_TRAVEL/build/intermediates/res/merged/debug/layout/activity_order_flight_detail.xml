@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/title_with_btn" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/general_margin_half"
+                android:orientation="vertical" >
+
+                <include layout="@layout/order_form_title" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:layout_marginRight="@dimen/general_margin"
+                    android:layout_marginTop="@dimen/general_margin2"
+                    android:background="@drawable/bg_table_4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frg_route_margintop"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_status" />
+
+                        <TextView
+                            android:id="@+id/tv_order_tatus"
+                            style="@style/description_v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dividerHeight"
+                        android:background="@drawable/dividing_line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frg_route_margintop"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/order_code" />
+
+                        <TextView
+                            android:id="@+id/tv_order_code"
+                            style="@style/description_v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dividerHeight"
+                        android:background="@drawable/dividing_line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frg_route_margintop"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dport" />
+
+                        <TextView
+                            android:id="@+id/tv_order_start_airport"
+                            style="@style/description_v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dividerHeight"
+                        android:background="@drawable/dividing_line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frg_route_margintop"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/aport" />
+
+                        <TextView
+                            android:id="@+id/tv_order_stop_airport"
+                            style="@style/description_v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dividerHeight"
+                        android:background="@drawable/dividing_line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frg_route_margintop"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/takeoff" />
+
+                        <TextView
+                            android:id="@+id/tv_order_takeoff"
+                            style="@style/description_v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dividerHeight"
+                        android:background="@drawable/dividing_line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frg_route_margintop"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/jiangluo_time" />
+
+                        <TextView
+                            android:id="@+id/tv_order_arrive_time"
+                            style="@style/description_v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:layout_marginRight="@dimen/general_margin"
+                    android:layout_marginTop="@dimen/second_line_marginTop"
+                    android:background="@drawable/bg_table_4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_width"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/dengjiren" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_add_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dividerHeight"
+                        android:background="@drawable/dividing_line_horizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/frg_route_margintop"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:layout_marginRight="@dimen/general_margin"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v5"
+                            android:layout_width="@dimen/text_width"
+                            android:layout_height="wrap_content"
+                            android:text="@string/contactperson" />
+
+                        <TextView
+                            android:id="@+id/tv_contact_person"
+                            style="@style/description_v22"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+
+                        <TextView
+                            android:id="@+id/tv_contact_person_mobile"
+                            style="@style/description_v22"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/calendar_month_topmargin"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:singleLine="true" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_tuigaiqian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:layout_marginRight="@dimen/general_margin"
+                    android:layout_marginTop="@dimen/second_line_marginTop"
+                     android:layout_marginBottom="@dimen/general_margin"
+                    android:background="@drawable/bg_table_4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:id="@+id/re_tuigaiqian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/general_margin" >
+
+                        <TextView
+                            android:id="@+id/tv_tuigaiqian"
+                            style="@style/description_v5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/general_row_heigh"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:text="@string/tuigaiqian" />
+
+                        <ImageView
+                            android:id="@+id/img_up_down_arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/general_margin"
+                            android:src="@drawable/slt_newtrip_arrow_down_default" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_tuigaiqian_content"
+                        style="@style/description_v11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/general_margin_half"
+                        android:paddingRight="@dimen/general_margin_half"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <RelativeLayout
+                android:id="@+id/rl_failed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone" >
+                   <TextView
+                    android:id="@+id/btn_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="150dp"
+                    android:text="@string/net_refresh"
+                    android:textColor="#909da8"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <include layout="@layout/general_loading" />
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_order_flight_detail.xml -->

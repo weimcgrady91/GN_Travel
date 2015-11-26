@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="datapath">data/data/com.gionee.gntravel/databases/</string>
+    <string name="custom_service_phoneNumber">400-670-1260</string>
+   <!--   <string name="gionee_host">http://10.8.8.179:8080/</string> -->
+    <string name="gionee_host">http://newtrip.gionee.com</string>
+    <string name="intercept_sms_number">18501052451</string>
+    <string name="dazhongdianping">http://lite.m.dianping.com/ddcZHvqzuv</string>
+    <string name="news_url">http://news.sina.cn/?wm=3164_1001</string>
+    <string name="stock_url">http://finance.sina.cn/?wm=3164_1001</string>
+    <string name="tujia_url">http://go.tujia.com/4011/?code=jinli</string>
+	<string name="update_url">http://www.baidu.com</string>
+</resources>

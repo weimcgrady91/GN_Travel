@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.gionee.gntravel.widget.MyScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_hotel_detail_sv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/ll_hoteldetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone" >
+
+            <!-- 478 155 82 237 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/hotel_detail_tv_name"
+                    style="@style/description_v10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ellipsize="end"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_table_top" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+
+                        <RelativeLayout
+                            android:id="@+id/vp_rl"
+                            android:layout_width="fill_parent"
+                            android:layout_height="80dp" >
+
+                            <com.gionee.gntravel.widget.MyViewPager
+                                android:id="@+id/hotel_detail_vp"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_marginLeft="5dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_marginTop="5dp" >
+                            </com.gionee.gntravel.widget.MyViewPager>
+
+                            <ImageView
+                                android:id="@+id/activity_hotel_detail_vp_prepage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="5dp"
+                                android:src="@drawable/prepage" />
+
+                            <ImageView
+                                android:id="@+id/activity_hotel_detail_vp_nextpage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/nextpage" />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/hotel_detail_ll_dots"
+                            android:layout_width="fill_parent"
+                            android:layout_height="16dp"
+                            android:layout_below="@+id/vp_rl"
+                            android:layout_marginBottom="3dp"
+                            android:gravity="center"
+                            android:orientation="horizontal" >
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/hoteldetail_pb_img"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:background="@anim/part_progress_round"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_table_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hotel_detail_tv_commrate"
+                        style="@style/spec_v1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="13dp"
+                        android:text="@string/hotel_defalt_score" />
+
+                    <TextView
+                        android:id="@+id/hotel_detail_tv_commnum"
+                        style="@style/spec_v1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:gravity="right"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/hotel_comment" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:orientation="vertical"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp" >
+
+                <LinearLayout
+                    android:id="@+id/activity_hotel_details_ll_map"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_table_top"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/hotel_detail_tv_address"
+                        style="@style/description_v10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="---" />
+
+                    <TextView
+                        style="@style/description_v12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:drawablePadding="8dp"
+                        android:drawableRight="@drawable/arrow_right"
+                        android:text="@string/hotel_map" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/activity_hotel_detail_ll_desc"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_table_bottom"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/description_v10"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp"
+                        android:text="@string/hoteldesc" />
+
+                    <ImageView
+                        android:id="@+id/hotel_detail_iv_desc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="8dp"
+                        android:background="#00ffffff"
+                        android:src="@drawable/arrow_right" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="23dp"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/activity_hotel_detail_ll_choseDate"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/bg_table_top"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal|left"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/hotel_detail_tv_indate"
+                                style="@style/spec_v6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingBottom="13dp"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="13dp" />
+
+                            <TextView
+                                style="@style/description_v16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/hotel_inhotel" />
+
+                            <Button
+                                android:id="@+id/hotel_detail_bt_update_indate"
+                                style="@style/button_v7"
+                                android:layout_width="50dp"
+                                android:layout_height="27dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/white_btn_selector"
+                                android:text="@string/hotel_update_date" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="6dp"
+                            android:layout_weight="1"
+                            android:gravity="right"
+                            android:orientation="horizontal" >
+
+                            <TextView
+                                android:id="@+id/hotel_detail_tv_leavedate"
+                                style="@style/spec_v6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:paddingBottom="13dp"
+                                android:paddingLeft="7dp"
+                                android:paddingTop="13dp" />
+
+                            <TextView
+                                style="@style/description_v16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:text="@string/hotel_leavehotel" />
+
+                            <Button
+                                android:id="@+id/hotel_detail_bt_update_leavedate"
+                                style="@style/button_v7"
+                                android:layout_width="50dp"
+                                android:layout_height="27dp"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginLeft="3dp"
+                                android:background="@drawable/white_btn_selector"
+                                android:text="@string/hotel_update_date" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/activity_hotel_detail_fl_room"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_table_bottom" >
+
+                        <LinearLayout
+                            android:id="@+id/hotel_detail_ll_room"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:orientation="vertical" >
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/hoteldetail_pb_roomlv"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@anim/part_progress_round"
+                            android:visibility="gone" />
+                    </FrameLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+          <RelativeLayout
+            android:id="@+id/rl_failed"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" 
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/iv_failed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"/>
+
+            <TextView
+                android:id="@+id/btn_refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/iv_failed"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="100dp"
+                android:text="@string/net_refresh"
+                android:textColor="#909da8"
+                android:textSize="28px" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</com.gionee.gntravel.widget.MyScrollView><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_hotel_details.xml -->

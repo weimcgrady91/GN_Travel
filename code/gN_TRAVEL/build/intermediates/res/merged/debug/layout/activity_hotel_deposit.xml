@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:id="@+id/sv_hotel_deposit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/activity_hotel_deposit_hotelname"
+                    style="@style/description_v16"
+                    android:layout_width="fill_parent"
+                    android:layout_height="41dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="5dp" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_table_top"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/description_v16"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:text="发卡银行" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <RelativeLayout
+                            android:id="@+id/activity_hotel_deposit_ll_chosebanck"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="135dp"
+                            android:clickable="true" >
+
+                            <EditText
+                                android:id="@+id/activity_hotel_deposit_tv_chosebanck"
+                                style="@style/description_v16"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:background="@null"
+                                android:editable="false"
+                                android:hint="请选择发卡银行" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_gravity="center_vertical"
+                                android:paddingRight="5dp"
+                                android:src="@drawable/arrow_right" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/mid_line"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/description_v16"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:text="卡号" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <EditText
+                            android:id="@+id/activity_hotel_deposit_et_cardnum"
+                            style="@style/description_v16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="135dp"
+                            android:background="@null"
+                            android:hint="信用卡号" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/mid_line"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/description_v16"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:text="姓名" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <EditText
+                            android:id="@+id/activity_hotel_deposit_et_name"
+                            style="@style/description_v16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="135dp"
+                            android:background="@null"
+                            android:hint="姓名" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/mid_line"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/description_v16"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:text="身份证号" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <EditText
+                            android:id="@+id/activity_hotel_deposit_et_idcard"
+                            style="@style/description_v16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="135dp"
+                            android:background="@null"
+                            android:hint="身份证号码" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/mid_line"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/description_v16"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:text="手机号" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <EditText
+                            android:id="@+id/activity_hotel_deposit_et_phonenum"
+                            style="@style/description_v16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="135dp"
+                            android:background="@null"
+                            android:hint="手机号码" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/mid_line"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/description_v16"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:text="卡失效期" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <EditText
+                            android:id="@+id/activity_hotel_deposit_et_expiredate"
+                            style="@style/description_v16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="135dp"
+                            android:background="@null"
+                            android:hint="月份年份 比如：0815" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/bg_table_bottom"
+                        android:gravity="center_vertical" >
+
+                        <TextView
+                            style="@style/description_v16"
+                            android:layout_width="125dp"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="4dp"
+                            android:text="信用卡验证码" />
+
+                        <TextView
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:layout_marginBottom="5dp"
+                            android:layout_marginLeft="130dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/line_horizontal" />
+
+                        <EditText
+                            android:id="@+id/activity_hotel_deposit_et_seriescode"
+                            style="@style/description_v16"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="135dp"
+                            android:background="@null"
+                            android:hint="签名栏末尾最后3位" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/img_loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@anim/progress_round" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="198dp"
+            android:layout_height="fill_parent"
+            android:background="@color/common_blue"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:text="担保金额：￥"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/order_tv_depositpice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/activity_hotel_deposit_bt_submitorder"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/arange"
+            android:text="担保"
+            android:textColor="#FFFFFFFF"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_hotel_deposit.xml -->

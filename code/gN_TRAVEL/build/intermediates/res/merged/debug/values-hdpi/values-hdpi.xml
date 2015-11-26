@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/values-hdpi/dimens.xml -->
+    <eat-comment/>
+    <dimen name="actionbar_arrow_w">40dp</dimen>
+    <dimen name="actionbar_group_h">32dp</dimen>
+    <dimen name="actionbar_group_w">136dp</dimen>
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_title_w">68dp</dimen>
+    <dimen name="add_person_width">90dp</dimen>
+    <dimen name="add_text_width">74dp</dimen>
+    <dimen name="address_width">160dp</dimen>
+    <dimen name="addtext_height">29dp</dimen>
+    <dimen name="addtext_width">96dp</dimen>
+    <dimen name="bottom_button_w">106dp</dimen>
+    <dimen name="bottom_container_img_margin_right">12dp</dimen>
+    <dimen name="bottom_container_img_margin_top">2dp</dimen>
+    <dimen name="bottom_fengeline_w">1.33dp</dimen>
+    <dimen name="bottom_h">48dp</dimen>
+    <dimen name="calendar_cell_heigh">35dp</dimen>
+    <dimen name="calendar_day_headers_paddingbottom">4dp</dimen>
+    <dimen name="calendar_h">200dp</dimen>
+    <dimen name="calendar_month_title_bottommargin">4dp</dimen>
+    <dimen name="calendar_month_topmargin">16dp</dimen>
+    <dimen name="calendar_text_medium">18sp</dimen>
+    <dimen name="calendar_text_small">14sp</dimen>
+    <dimen name="calendar_title_week_heigh">30dp</dimen>
+    <dimen name="calendar_title_year_heigh">35dp</dimen>
+    <dimen name="city_hint_dialog">60dp</dimen>
+    <dimen name="city_item_index_height">34dp</dimen>
+    <dimen name="common_form_title">33dp</dimen>
+    <dimen name="common_group_item_heigh">62dp</dimen>
+    <dimen name="custom_dialog_heigh">96dp</dimen>
+    <dimen name="date_arrow_marginleft">20dp</dimen>
+    <dimen name="date_container_h">43dp</dimen>
+    <dimen name="date_pick_arrow_margin">20dp</dimen>
+    <dimen name="date_pick_arrow_margin_bottom">3dp</dimen>
+    <dimen name="date_pick_container_heigh">41dp</dimen>
+    <dimen name="date_pick_text_margin">10dp</dimen>
+    <dimen name="date_text_marginleft">10dp</dimen>
+    <dimen name="dividerHeight">0.5dp</dimen>
+    <dimen name="flg_list_calendar_padding">16dp</dimen>
+    <dimen name="flg_list_item_city_marginLeft">66dp</dimen>
+    <dimen name="flg_list_item_class_marginLeft">170dp</dimen>
+    <dimen name="flg_list_item_flight_marginLeft">116dp</dimen>
+    <dimen name="flg_list_item_marginLeftorRight">12dp</dimen>
+    <dimen name="flg_list_searchContainer_h">300dp</dimen>
+    <dimen name="flight_item_h">67dp</dimen>
+    <dimen name="frg_list_search_btn_h">29dp</dimen>
+    <dimen name="frg_list_search_btn_margin_right">6dp</dimen>
+    <dimen name="frg_list_search_btn_w">63dp</dimen>
+    <dimen name="frg_list_search_left_table_w">100dp</dimen>
+    <dimen name="frg_route_margintop">48dp</dimen>
+    <dimen name="frg_route_margintop2">23dp</dimen>
+    <dimen name="general_btn_heigh">32dp</dimen>
+    <dimen name="general_btn_width">68dp</dimen>
+    <dimen name="general_dialog_btn_width">150dp</dimen>
+    <dimen name="general_dialog_heigh">65dp</dimen>
+    <dimen name="general_dialog_width">306dp</dimen>
+    <dimen name="general_dividing_line">1dp</dimen>
+    <dimen name="general_line_margin">2dp</dimen>
+    <dimen name="general_margin">8dp</dimen>
+    <dimen name="general_margin2">16dp</dimen>
+    <dimen name="general_margin_half">4dp</dimen>
+    <dimen name="general_margin_left">13dp</dimen>
+    <dimen name="general_row_heigh">47dp</dimen>
+    <dimen name="general_search_btn_cancel_width">104dp</dimen>
+    <dimen name="general_search_left_table_width">100dp</dimen>
+    <dimen name="general_spacing">8dp</dimen>
+    <dimen name="general_title_heigh">35dp</dimen>
+    <dimen name="line_top_bottom_distance">11dp</dimen>
+    <dimen name="list_general_item_heigh">67dp</dimen>
+    <dimen name="list_order_item_heigh">127dp</dimen>
+    <dimen name="listview_h">192dp</dimen>
+    <dimen name="listview_height">216dp</dimen>
+    <dimen name="ll_width">206dp</dimen>
+    <dimen name="margin_bottom_1">4dp</dimen>
+    <dimen name="max_textsize">20sp</dimen>
+    <dimen name="min_textsize">15sp</dimen>
+    <dimen name="normal_marginLeftorRight">6dp</dimen>
+    <dimen name="normal_marginLeftorRight2">8dp</dimen>
+    <dimen name="order_ll_height">47dp</dimen>
+    <dimen name="order_ll_width">135dp</dimen>
+    <dimen name="order_marginleft">5dp</dimen>
+    <dimen name="photo_dialiag_margin1">30dp</dimen>
+    <dimen name="photo_dialiag_margin2">26dp</dimen>
+    <dimen name="photo_dialiag_margin3">25dp</dimen>
+    <dimen name="photo_dialiag_width">290dp</dimen>
+    <dimen name="photo_h">141dp</dimen>
+    <dimen name="search_height">40dp</dimen>
+    <dimen name="second_line_image_marginRight">28dp</dimen>
+    <dimen name="second_line_item_marginLeft">164dp</dimen>
+    <dimen name="second_line_item_marginLeft2">174dp</dimen>
+    <dimen name="second_line_marginBottom">15dip</dimen>
+    <dimen name="second_line_marginTop">23dp</dimen>
+    <dimen name="second_line_marginTop2">10dp</dimen>
+    <dimen name="second_line_title_heigh2">67dp</dimen>
+    <dimen name="second_line_title_heigh3">29dp</dimen>
+    <dimen name="second_line_title_marginLeft">14dp</dimen>
+    <dimen name="second_line_title_marginLeft2">113dp</dimen>
+    <dimen name="second_line_title_marginLeftorRight">19dp</dimen>
+    <dimen name="station_text_width">50dp</dimen>
+    <dimen name="text_width">78dp</dimen>
+    <dimen name="title_button_width">60dp</dimen>
+    <dimen name="title_cancel_marginLeft">17dp</dimen>
+    <dimen name="weather_marginLeft">55dp</dimen>
+    <dimen name="widget_list_item_heigh">45dp</dimen>
+    <dimen name="widget_list_item_img_heigh">43dp</dimen>
+    <!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/values-hdpi/text_styles.xml -->
+    <eat-comment/>
+    <style name="Spec_weather_16" parent="SpeciaText_weather_ffffff">
+        <item name="android:textSize">24px</item>
+    </style>
+    <style name="Spec_weather_18" parent="SpeciaText_weather_ffffff">
+        <item name="android:textSize">27px</item>
+    </style>
+    <style name="Spec_weather_20" parent="SpeciaText_weather_ffffff">
+        <item name="android:textSize">30px</item>
+    </style>
+    <style name="Spec_weather_35" parent="SpeciaText_weather_ffffff">
+        <item name="android:textSize">35px</item>
+    </style>
+    <style name="Spec_weather_57" parent="SpeciaText_weather_ffffff">
+        <item name="android:textSize">57sp</item>
+    </style>
+    <style name="Spec_weather_5a8495_14">
+        <item name="android:textSize">21px</item>
+        <item name="android:textColor">#5a8495</item>
+    </style>
+    <style name="Spec_weather_5a8495_20">
+        <item name="android:textSize">30px</item>
+        <item name="android:textColor">#5a8495</item>
+    </style>
+    <style name="Spec_weather_60d4d4_18" parent="base_v2">
+        <item name="android:textColor">#60d4d4</item>
+    </style>
+    <style name="Spec_weather_8" parent="SpeciaText_weather_ffffff">
+        <item name="android:textSize">8sp</item>
+    </style>
+    <style name="SpeciaText_weather_ffffff">
+        <item name="android:textColor">#ffffff</item>
+    </style>
+    <style name="base_v1">
+        <item name="android:textSize">30px</item>
+    </style>
+    <style name="base_v2">
+        <item name="android:textSize">27px</item>
+    </style>
+    <style name="base_v3">
+        <item name="android:textSize">24px</item>
+    </style>
+    <style name="base_v4">
+        <item name="android:textSize">21px</item>
+    </style>
+    <style name="base_v5">
+        <item name="android:textSize">18px</item>
+    </style>
+    <style name="button_v1" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="button_v2" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v1</item>
+    </style>
+    <style name="button_v3" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="button_v4" parent="base_v1">
+        <item name="android:textColor">@color/text_color_v1</item>
+    </style>
+    <style name="button_v5" parent="button_v4">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="button_v6" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="button_v7" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="button_v8" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="button_v9" parent="base_v1">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="date_v1" parent="base_v2">
+        <item name="android:textColor">#000000</item>
+    </style>
+    <style name="date_v2" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="date_v3" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="description_v1" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v5</item>
+    </style>
+    <style name="description_v10" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="description_v11" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="description_v12" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="description_v13" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="description_v14" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="description_v15" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v1</item>
+    </style>
+    <style name="description_v16" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="description_v17" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="description_v18" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="description_v19" parent="base_v4">
+        <item name="android:textColor">@color/common_green</item>
+    </style>
+    <style name="description_v2" parent="base_v1">
+        <item name="android:textColor">@color/text_color_v5</item>
+    </style>
+    <style name="description_v20" parent="base_v1">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="description_v21" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v10</item>
+    </style>
+    <style name="description_v22" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="description_v23" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="description_v3" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v1</item>
+    </style>
+    <style name="description_v4" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v9</item>
+    </style>
+    <style name="description_v5" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="description_v5_v1" parent="description_v5">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="description_v6" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v1</item>
+    </style>
+    <style name="description_v7" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="description_v8" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v10</item>
+    </style>
+    <style name="description_v9" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v10</item>
+    </style>
+    <style name="list_v1" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="list_v2" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="list_v3" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="list_v4" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v4</item>
+    </style>
+    <style name="list_v5" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="list_v6" parent="base_v1">
+        <item name="android:textColor">@color/text_color_v6</item>
+    </style>
+    <style name="spec_v1" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="spec_v2" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v7</item>
+    </style>
+    <style name="spec_v3" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v7</item>
+    </style>
+    <style name="spec_v3_v1" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v7</item>
+    </style>
+    <style name="spec_v4" parent="base_v3">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="spec_v5" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v7</item>
+    </style>
+    <style name="spec_v6" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="spec_v7" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v7</item>
+    </style>
+    <style name="spec_v8" parent="base_v5">
+        <item name="android:textColor">@color/text_color_v3</item>
+    </style>
+    <style name="title_v1" parent="base_v1">
+        <item name="android:textColor">@color/text_color_v1</item>
+    </style>
+    <style name="title_v2" parent="base_v2">
+        <item name="android:textColor">@color/text_color_v2</item>
+    </style>
+    <style name="title_v3" parent="base_v4">
+        <item name="android:textColor">@color/text_color_v1</item>
+    </style>
+    <style name="widget_text">
+        <item name="android:textSize">18px</item>
+        <item name="android:textColor">#a6a6a6</item>
+    </style>
+</resources>

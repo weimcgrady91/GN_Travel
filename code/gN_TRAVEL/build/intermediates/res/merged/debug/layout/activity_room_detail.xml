@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="307dp"
+    android:layout_height="313dp"
+    android:background="@drawable/shurukuang"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="307dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/dialog_tv_roomname"
+            style="@style/description_v7"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:text="标准间" />
+
+        <ImageButton
+            android:id="@+id/dialog_bt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:gravity="right"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="9dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/hotel_close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/dialog_iv_img"
+            android:layout_width="307dp"
+            android:layout_height="144dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/defaltimg307144" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/activity_room_detail_area"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:text="面积：" />
+
+            <TextView
+                android:id="@+id/dialog_tv_area"
+                style="@style/description_v16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/activity_room_detail_floor"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:text="楼层：" />
+
+            <TextView
+                android:id="@+id/dialog_tv_floor"
+                style="@style/description_v16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2-5层" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/activity_room_detail_people"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:text="可住：" />
+
+            <TextView
+                android:id="@+id/dialog_tv_people"
+                style="@style/description_v16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-人" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/activity_room_detail_bed"
+                android:drawablePadding="3dp"
+                android:paddingLeft="10dp"
+                android:text="床型：" />
+
+            <TextView
+                android:id="@+id/dialog_tv_bed"
+                style="@style/description_v16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="双人床2.2米" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:gravity="left"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/description_v11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/activity_room_detail_net"
+            android:drawablePadding="3dp"
+            android:paddingLeft="10dp"
+            android:text="宽带：" />
+
+        <TextView
+            android:id="@+id/dialog_tv_net"
+            style="@style/description_v16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部都支持wifi上网" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/line_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/spec_v3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="@string/dollor" />
+
+            <TextView
+                android:id="@+id/dialog_tv_price"
+                style="@style/spec_v2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/dialog_bt_book"
+            style="@style/button_v2"
+            android:layout_width="47dp"
+            android:layout_height="28dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_start_route"
+            android:text="预定" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_room_detail.xml -->

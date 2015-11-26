@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <include
+        android:id="@+id/setting_title"
+        layout="@layout/titlebar" />
+
+    <LinearLayout
+        android:id="@+id/ll_setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/setting_title"
+        android:layout_marginLeft="@dimen/margin_bottom_1"
+        android:layout_marginRight="@dimen/margin_bottom_1"
+        android:layout_marginTop="@dimen/frg_route_margintop2"
+        android:background="@drawable/bg_table_4"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/frg_route_margintop"
+            android:layout_marginLeft="@dimen/normal_marginLeftorRight2"
+            android:layout_marginRight="@dimen/normal_marginLeftorRight2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/wifi_hotal" />
+
+            <ImageView
+                android:id="@+id/img_wifi_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/slt_common_switch_off" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            android:background="@drawable/frg_route_line" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/frg_route_margintop"
+            android:layout_marginLeft="@dimen/normal_marginLeftorRight2"
+            android:layout_marginRight="@dimen/normal_marginLeftorRight2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/my_location" />
+
+            <ImageView
+                android:id="@+id/img_location_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/slt_common_switch_off" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            android:background="@drawable/frg_route_line" />
+
+        <RelativeLayout
+            android:id="@+id/re_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/frg_route_margintop"
+            android:layout_marginLeft="@dimen/normal_marginLeftorRight2"
+            android:layout_marginRight="@dimen/normal_marginLeftorRight2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/update" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                style="@style/description_v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/margin_bottom_1"
+                android:layout_toLeftOf="@+id/img_right_raw"
+                android:ellipsize="end"
+                android:singleLine="true" />
+
+            <ImageView
+                android:id="@+id/img_right_raw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dividerHeight"
+            android:background="@drawable/frg_route_line" />
+
+        <RelativeLayout
+            android:id="@+id/re_about_us"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/frg_route_margintop"
+            android:layout_marginLeft="@dimen/normal_marginLeftorRight2"
+            android:layout_marginRight="@dimen/normal_marginLeftorRight2"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/description_v5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/about_us" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/re_clean_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/frg_route_margintop"
+        android:layout_below="@id/ll_setting"
+        android:layout_marginLeft="@dimen/margin_bottom_1"
+        android:layout_marginRight="@dimen/margin_bottom_1"
+        android:layout_marginTop="@dimen/second_line_marginTop"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_clean_cache"
+            style="@style/description_v5"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/frg_route_margintop"
+            android:background="@drawable/bg_table_4"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/normal_marginLeftorRight2"
+            android:text="@string/clean_cache" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="@dimen/normal_marginLeftorRight2"
+            android:src="@drawable/arrow" />
+    </RelativeLayout>
+
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" -->
+<!--         android:layout_below="@id/re_clean_cache" > -->
+
+<!--         <Button -->
+<!--             android:id="@+id/btn_setting_exit" -->
+<!--             style="@style/SpeciaText_mainTab_button" -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="@dimen/general_row_heigh" -->
+<!--             android:layout_centerVertical="true" -->
+<!--             android:layout_marginLeft="@dimen/normal_marginLeftorRight" -->
+<!--             android:layout_marginRight="@dimen/normal_marginLeftorRight" -->
+<!--             android:background="@drawable/red_btn_selector" -->
+<!--             android:text="@string/exit" /> -->
+<!--     </RelativeLayout> -->
+
+</RelativeLayout>

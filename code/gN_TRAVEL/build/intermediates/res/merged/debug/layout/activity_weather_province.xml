@@ -1,0 +1,16 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include layout="@layout/titlebar" />
+
+    <GridView
+        android:id="@+id/activity_weather_gv_provincecity"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="4" >
+    </GridView>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_weather_province.xml -->

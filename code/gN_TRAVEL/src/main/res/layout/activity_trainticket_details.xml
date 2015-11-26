@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_title_heigh"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin2"
+        android:background="@drawable/second_title"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_train_detail_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/general_margin_left" />
+
+        <TextView
+            android:id="@+id/tv_train_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/general_margin" />
+
+        <TextView
+            android:id="@+id/tv_train_time_table"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/general_margin_left"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="列车时刻表" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/second_line_title_heigh2"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:background="@drawable/mid"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/general_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/start" />
+
+        <TextView
+            android:id="@+id/tv_tarin_detail_start_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_toRightOf="@id/img_01" />
+
+        <TextView
+            android:id="@+id/tv_tarin_detail_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_toRightOf="@id/tv_tarin_detail_start_time"
+            android:gravity="center_vertical"
+            android:text="北京南站" />
+
+        <LinearLayout
+            android:layout_width="@dimen/general_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_train_detail_start_weather_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/tv_train_detail_start_weather_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/second_line_title_heigh2"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:background="@drawable/bottom_big"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/img_11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/general_margin_left"
+            android:scaleType="center"
+            android:src="@drawable/end" />
+
+        <TextView
+            android:id="@+id/tv_tarin_detail_end_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_toRightOf="@id/img_11"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/tv_tarin_detail_stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_toRightOf="@id/tv_tarin_detail_end_time"
+            android:text="上海虹桥站" />
+
+        <LinearLayout
+            android:layout_width="@dimen/general_btn_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/img_train_detail_end_weather_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="center" />
+
+            <TextView
+                android:id="@+id/tv_train_detail_end_weather_c"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical|right"
+                android:singleLine="true" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/general_title_heigh"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:layout_marginTop="@dimen/general_margin2"
+        android:background="@drawable/second_title"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_today_train_detail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_today_train_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:gravity="center" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_1"
+        android:layout_marginLeft="@dimen/general_margin"
+        android:layout_marginRight="@dimen/general_margin"
+        android:background="@drawable/bottom_big2" >
+
+        <ListView
+            android:id="@+id/lv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:divider="@drawable/dividing_line_horizontal"
+            android:dividerHeight="@dimen/dividerHeight"
+            android:footerDividersEnabled="true"
+            android:listSelector="@drawable/listview_selector2" >
+        </ListView>
+    </FrameLayout>
+
+</LinearLayout>

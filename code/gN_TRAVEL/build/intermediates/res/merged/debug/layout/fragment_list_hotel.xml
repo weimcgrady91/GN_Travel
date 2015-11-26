@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/frg_bg" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="@dimen/date_pick_container_heigh"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/date_pick_container_heigh"
+            android:background="@drawable/searchbg3"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/fragmeng_hotel_tv_citylist"
+                style="@style/description_v16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/hotel_address_bottom"
+                android:gravity="center" />
+
+            <EditText
+                android:id="@+id/hotel_et_search"
+                style="@style/description_v17"
+                android:layout_width="163dp"
+                android:layout_height="31dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/searchbg2"
+                android:clickable="true"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:hint="@string/hotel_search"
+                android:paddingLeft="10dp"
+                android:singleLine="true" />
+
+            <Button
+                android:id="@+id/hotel_bt_map"
+                style="@style/description_v16"
+                android:layout_width="65dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/txt_kuang_bg"
+                android:text="地图" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg" >
+
+            <RelativeLayout
+                android:id="@+id/rl_failed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:id="@+id/iv_failed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:layout_centerHorizontal="true"/>
+
+                <TextView
+                    android:id="@+id/btn_refresh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="103dp"
+                    android:text="@string/net_refresh"
+                    android:textColor="#909da8"
+                    android:textSize="28px" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/hotel_lv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="#00000000"
+                android:divider="@drawable/dividing_line_horizontal"
+                android:dividerHeight="@dimen/dividerHeight"
+                android:footerDividersEnabled="true"
+                android:listSelector="@drawable/listview_selector" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/bottom_h"
+            android:layout_gravity="bottom"
+            android:layout_weight="0"
+            android:background="@color/common_blue"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/orderbydefalt"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/fragment_hotel_ll_defalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/fragment_list_hotel_iv_defalt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                        android:contentDescription="@string/hello_world"
+                        android:scaleType="center"
+                        android:src="@drawable/hotel_defalt_click" />
+
+                    <TextView
+                        android:id="@+id/fragment_hotel_tv_defalt"
+                        style="@style/description_v3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                        android:text="默认排序" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fragment_hotel_iv_arrowdefalt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/bottom_container_img_margin_right"
+                    android:contentDescription="@string/hello_world"
+                    android:scaleType="center" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/bottom_fengeline_w"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_cut_line"
+                android:contentDescription="@string/hello_world" />
+
+            <RelativeLayout
+                android:id="@+id/orderbyprice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/fragment_hotel_ll_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/fragment_list_hotel_iv_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                        android:src="@drawable/price_normal" />
+
+                    <TextView
+                        android:id="@+id/fragment_hotel_tv_price"
+                        style="@style/description_v4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                        android:text="价格不限" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/bottom_fengeline_w"
+                android:layout_height="match_parent"
+                android:background="@drawable/bottom_cut_line"
+                android:contentDescription="@string/hello_world" />
+
+            <RelativeLayout
+                android:id="@+id/screening"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/fragment_hotel_ll_filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/fragment_list_hotel_iv_screening"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/bottom_container_img_margin_top"
+                        android:contentDescription="@string/hello_world"
+                        android:scaleType="center"
+                        android:src="@drawable/screening_normal" />
+
+                    <TextView
+                        android:id="@+id/fragment_hotel_tv_filter"
+                        style="@style/description_v4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/bottom_container_img_margin_top"
+                        android:text="@string/screening" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/fragment_hotel_list_iv_filterbiao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/fragment_hotel_ll_filter"
+                    android:src="@drawable/yuanquan"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragment_list_hotel_calendar_ll_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/occlusion"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:visibility="invisible" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hotel_ll_dateselector_holder"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/img_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@anim/progress_round" />
+    </RelativeLayout>
+
+</FrameLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/fragment_list_hotel.xml -->

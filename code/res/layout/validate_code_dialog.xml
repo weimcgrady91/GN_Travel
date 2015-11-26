@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/re_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_marginRight="@dimen/general_margin"
+            android:background="@drawable/bg_table_4"
+            android:orientation="vertical" >
+
+            <include layout="@layout/dialog_title" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/date_pick_container_heigh"
+                android:layout_marginBottom="@dimen/frg_list_search_btn_margin_right"
+                    android:layout_marginTop="@dimen/frg_list_search_btn_margin_right"
+                android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                android:layout_marginRight="@dimen/second_line_title_marginLeft"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+   
+
+
+                
+                    <EditText
+                        android:id="@+id/et_forget_yanzheng"
+                        style="@style/description_v23"
+                        android:layout_width="166dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/pic_valadate_code"
+                        android:inputType="phone"
+                        android:maxLength="4"
+                        android:layout_marginRight="@dimen/date_text_marginleft"
+                        android:singleLine="true" />
+            
+
+                <RelativeLayout
+                    android:layout_width="@dimen/general_btn_width"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/tv_forget_bendi_yanzheng"
+                        style="@style/description_v19"
+                        android:layout_width="@dimen/general_btn_width"
+                        android:layout_height="@dimen/actionbar_group_h"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:gravity="center"
+                        android:src="@drawable/loading_fail"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/img_dialog"
+                        style="@style/description_v19"
+                        android:layout_width="@dimen/order_ll_height"
+                        android:layout_height="@dimen/order_ll_height"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="@dimen/general_margin"
+                        android:background="@anim/part_progress_round"
+                        android:gravity="center" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/img_refresh_yanzheng_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:background="@drawable/refresh_yanzheng_code" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/date_pick_container_heigh"
+                android:layout_marginBottom="@dimen/second_line_marginTop2"
+                android:layout_marginLeft="@dimen/second_line_title_marginLeft"
+                android:layout_marginRight="@dimen/second_line_title_marginLeft"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/btn_dialog_sure"
+                    style="@style/description_v22"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:background="@drawable/white_btn_selector"
+                    android:text="@string/ok" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

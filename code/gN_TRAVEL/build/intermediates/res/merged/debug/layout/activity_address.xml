@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/address_title"
+        layout="@layout/title_with_btn" />
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/general_margin2"
+            android:layout_marginLeft="@dimen/general_margin"
+            android:layout_marginRight="@dimen/general_margin"
+            android:layout_marginTop="@dimen/general_margin2"
+            android:background="@drawable/bg_table_4"
+            android:gravity="center_vertical"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frg_route_margintop"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/description_v5"
+                    android:layout_width="@dimen/addtext_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_name" />
+
+                <ImageView
+                    android:layout_width="@dimen/dividerHeight"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                    android:layout_marginTop="@dimen/line_top_bottom_distance"
+                    android:background="@drawable/dividing_line_vertical" />
+
+                <EditText
+                    android:id="@+id/et_address_name"
+                    style="@style/description_v23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:background="@android:color/transparent"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividerHeight"
+                android:background="@drawable/dividing_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frg_route_margintop"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/description_v5"
+                    android:layout_width="@dimen/addtext_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address_mobile" />
+
+                <ImageView
+                    android:layout_width="@dimen/dividerHeight"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                    android:layout_marginTop="@dimen/line_top_bottom_distance"
+                    android:background="@drawable/dividing_line_vertical" />
+
+                <EditText
+                    android:id="@+id/et_address_mobile"
+                    style="@style/description_v23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:maxLength="13"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividerHeight"
+                android:background="@drawable/dividing_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/frg_route_margintop"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/description_v5"
+                    android:layout_width="@dimen/addtext_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/maincode" />
+
+                <ImageView
+                    android:layout_width="@dimen/dividerHeight"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                    android:layout_marginTop="@dimen/line_top_bottom_distance"
+                    android:background="@drawable/dividing_line_vertical" />
+
+                <EditText
+                    android:id="@+id/et_maincode"
+                    style="@style/description_v23"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:background="@android:color/transparent"
+                    android:inputType="phone"
+                    android:maxLength="6"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dividerHeight"
+                android:background="@drawable/dividing_line_horizontal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/frg_route_margintop"
+                android:layout_marginLeft="@dimen/general_margin"
+                android:layout_marginRight="@dimen/general_margin"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/description_v5"
+                    android:layout_width="@dimen/addtext_width"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address" />
+
+                <ImageView
+                    android:layout_width="@dimen/dividerHeight"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/line_top_bottom_distance"
+                    android:layout_marginTop="@dimen/line_top_bottom_distance"
+                    android:background="@drawable/dividing_line_vertical" />
+
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/description_v23"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/general_margin"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/activity_address.xml -->

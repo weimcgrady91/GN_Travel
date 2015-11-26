@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_news_item"
+    android:layout_width="match_parent"
+    android:layout_height="102dp"
+    android:background="@android:color/white"
+    android:minHeight="102dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="14dp" >
+
+        <ImageView
+            android:id="@+id/img_newsImg"
+            android:layout_width="86dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/tv_long_title"
+            style="@style/title_v1"
+            android:textColor="#666666"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="6dp"
+            android:textSize="16sp"
+            android:layout_toLeftOf="@id/img_newsImg"
+            android:text="巴黎时装周将于2014年8月25日举行巴黎时装周将于2014年8月25日举行巴黎时装周将于2014年8月25日举行" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp" >
+
+        <TextView
+            android:id="@+id/tv_comment"
+            style="@style/widget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="评论215" />
+
+        <TextView
+            android:id="@+id/tv_pubDate"
+            style="@style/widget_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="18dp"
+            android:text="07-30 20:21" />
+    </RelativeLayout>
+
+</LinearLayout>

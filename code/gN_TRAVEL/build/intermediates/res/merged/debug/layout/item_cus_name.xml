@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/item_cus_et_name"
+        android:layout_width="fill_parent"
+        android:layout_height="47dp"
+        android:background="@null"
+        android:gravity="center_vertical"
+        style="@style/description_v23"
+        android:hint="@string/name"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:singleLine="true"
+        android:paddingTop="5dp"/>
+
+    <TextView
+        android:id="@+id/item_cus_name_tv_line"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dividerHeight"
+        android:background="@drawable/line_horizontal" />
+
+</LinearLayout><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/layout/item_cus_name.xml -->

@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/phoned"
+        android:icon="@drawable/ic_launcher"
+        android:showAsAction="ifRoom"/>
+<!--     <item -->
+<!--         android:id="@+id/collection" -->
+<!--         android:icon="@drawable/ic_launcher" -->
+<!--         android:showAsAction="ifRoom"/> -->
+</menu><!-- From: file:/D:/APK1_GNBJ_TRAVEL/code/gN_TRAVEL/src/main/res/menu/details_menu.xml -->
